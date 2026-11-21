@@ -1,0 +1,109 @@
+{
+  "source": "2026-10-24 operator approves strict drawing layout; conservative intersection of existing measured clearances and 5m drawing boundary at start(0.85,3.85), forward toward drawing right. Drawing geometry is an estimate.",
+  "boundary_distances_m": {
+    "front": 4.15,
+    "back": 0.81,
+    "left": 1.0,
+    "right": 3.3
+  },
+  "postpass_landing_area_clear_user_confirmed": true,
+  "takeoff_overhead_clearance_verified": false,
+  "reference": {
+    "position_local_m": [
+      0.12004354838122669,
+      0.03286276458420305,
+      -0.16192716169051635
+    ],
+    "heading_rad": -0.00840697211818089,
+    "local_frame": "map",
+    "body_frame": "base_link",
+    "fcu_height_above_ground_m": 0.245
+  },
+  "oriented_horizontal_bounds_flu_m": {
+    "x": [
+      -0.81,
+      4.5
+    ],
+    "y": [
+      -3.3,
+      1.0
+    ]
+  },
+  "corners_local_xy_m": [
+    [
+      4.628291398750745,
+      0.9949964973046642
+    ],
+    [
+      4.592141844470839,
+      -3.304851547652897
+    ],
+    [
+      -0.7176705087209397,
+      -3.260211051553757
+    ],
+    [
+      -0.6815209544410334,
+      1.0396369934038043
+    ]
+  ],
+  "ceiling_above_ground_m": 4.0,
+  "nominal_horizontal_size_m": [
+    5.31,
+    4.3
+  ],
+  "nominal_level_rear_gap_before_uncertainty_m": 0.5,
+  "flight_enabled": false,
+  "controller_geofence_updated": false,
+  "status": "OPERATOR_APPROVED_DRAWING_ESTIMATE_INTERSECT_PRIOR_CLEARANCES_REQUIRES_NEW_LOCAL_BINDING",
+  "software_check": {
+    "legacy_sphere_requirement_before_position_uncertainty_m": 0.582043430205315,
+    "corrected_rear_centre_distance_m": 0.81,
+    "rear_only_passes_even_with_position_uncertainty_0_1_m": true,
+    "note": "Prior rear-distance rejection withdrawn after user clarification; no enlargement beyond measured boundary and no controller guard change."
+  },
+  "supersedes": "_diagnostics/window_boundary_measurement_20261018.json",
+  "rear_edge_clearance_m": 0.5,
+  "body_horizontal_reference_assumption": "FCU reference at horizontal centre of 0.62 m long rotor envelope; body origin verification remains pending",
+  "overhead_height_user_confirmed": true,
+  "ground_z_reference_local_m": -0.40692716169051635,
+  "physical_vertical_limits_local_m": [
+    -0.40692716169051635,
+    3.5930728383094834
+  ],
+  "conservative_inscribed_axis_aligned_xy_m": {
+    "min": [
+      -0.672501757068426,
+      -3.260590792935905
+    ],
+    "max": [
+      4.583122647098232,
+      0.9953762386868126
+    ]
+  },
+  "target_bottom_height_m": 0.9,
+  "normal_flight_minimum_bottom_height_m": 0.8,
+  "historical_measurement_identity": {
+    "boot_id": "8ce02c9b-cb7b-4d3d-830f-8893cd8874c5",
+    "run_id": "77db4146571241bd80e89348e4ecbdfa",
+    "mavros": [
+      "/mavros",
+      "http://192.168.0.100:45109/"
+    ],
+    "lio": [
+      "/window_pass_lio/laserMapping",
+      "http://192.168.0.100:36007/"
+    ],
+    "pose": [
+      "/window_pass_competition_pose_session_20261013",
+      "http://192.168.0.100:45551/"
+    ]
+  },
+  "drawing_boundary_distances_m": {
+    "front": 4.15,
+    "back": 0.85,
+    "left": 1.15,
+    "right": 3.85
+  },
+  "geometry_accuracy_verified": false
+}

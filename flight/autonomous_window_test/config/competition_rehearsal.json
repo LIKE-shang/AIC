@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "execution": "offline_rehearsal_only",
+  "operator_observations": {
+    "target_bottom_height_m": 0.9,
+    "camera_height_approximation_error_m": [
+      0.02,
+      0.03
+    ],
+    "laser_displacement_magnitude_m": 0.07,
+    "laser_displacement_direction": "body_right_and_rear",
+    "body_forward_in_image": "up",
+    "camera_resolution_px": [
+      640,
+      360
+    ],
+    "laser_channel": 5,
+    "other_aux_channel": "operator_reports_unused",
+    "pwm_off_percent": 0,
+    "pwm_on_percent": 100,
+    "maximum_output_test": "operator_reports_successful_and_safeguarded",
+    "landing": "pilot_after_POSCTL_readback"
+  },
+  "measurements_not_supplied": {
+    "camera_pixel_to_body_transform": null,
+    "target_centres_in_current_local_frame": null
+  },
+  "sequence": [
+    1
+  ],
+  "timing": {
+    "observation_timeout_s": 0.35,
+    "ack_timeout_s": 2.0,
+    "stable_time_s": 1.0,
+    "light_time_s": 3.0,
+    "acquire_timeout_s": 10.0,
+    "move_timeout_s": 30.0,
+    "handover_timeout_s": 4.0
+  },
+  "timing_provenance": "Software rehearsal defaults, not measured aircraft performance. No physical commands are produced.",
+  "saved_image_measurement": {
+    "source": "_diagnostics/usb_raw_rbANV8/pixel_measurements.json",
+    "source_sha256": "641fa74c13a94bb61715d04ea84cc6bee029daa05c2b514265c3871ee685259e",
+    "image_size_px": [
+      640,
+      360
+    ],
+    "camera_frame_id": "circle_usb_optical_frame",
+    "saved_frames": 8,
+    "mean_bright_spot_px": [
+      372.75,
+      194.984375
+    ],
+    "offset_from_geometric_image_centre_px": [
+      53.25,
+      15.484375
+    ],
+    "max_sample_scatter_px": 0.3753253796707598,
+    "scope": "offline_image_measurement_only",
+    "body_offset_or_flight_correction": false,
+    "runtime_spot_detector_validated": false,
+    "deployed": false
+  }
+}

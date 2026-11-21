@@ -1,0 +1,27 @@
+<launch>
+  <!-- Camera-only test. Use a stable /dev/v4l/by-id path after checking the device. -->
+  <!-- Required, never infer the physical camera from /dev/video0. -->
+  <arg name="video_device"/>
+  <arg name="required" default="false"/>
+  <arg name="image_width" default="640"/>
+  <arg name="image_height" default="480"/>
+  <arg name="framerate" default="30"/>
+  <arg name="pixel_format" default="yuyv"/>
+  <arg name="io_method" default="mmap"/>
+  <arg name="image_topic" default="/usb_cam/image_raw"/>
+  <arg name="camera_info_topic" default="/usb_cam/camera_info"/>
+  <arg name="camera_frame_id" default="circle_usb_optical_frame"/>
+  <!-- The driver uses a PRIVATE NodeHandle; remap the fully resolved names. -->
+  <node name="circle_usb_camera" pkg="usb_cam" type="usb_cam_node" output="screen" respawn="false" required="$(arg required)">
+    <param name="video_device" value="$(arg video_device)"/>
+    <param name="image_width" value="$(arg image_width)"/>
+    <param name="image_height" value="$(arg image_height)"/>
+    <param name="framerate" value="$(arg framerate)"/>
+    <param name="pixel_format" value="$(arg pixel_format)"/>
+    <param name="io_method" value="$(arg io_method)"/>
+    <param name="camera_frame_id" value="$(arg camera_frame_id)"/>
+    <param name="camera_name" value="circle_usb_camera"/>
+    <remap from="/circle_usb_camera/image_raw" to="$(arg image_topic)"/>
+    <remap from="/circle_usb_camera/camera_info" to="$(arg camera_info_topic)"/>
+  </node>
+</launch>

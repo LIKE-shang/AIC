@@ -1,0 +1,17 @@
+<launch>
+  <!-- Legacy display-only detector: removed unrelated face/Haar parameters. -->
+  <arg name="image_topic" default="/camera/rgb/image_raw"/>
+  <arg name="output_image_topic" default="/shape_detection_image"/>
+  <arg name="blur_kernel" default="5"/>
+  <arg name="canny_thresh1" default="50"/>
+  <arg name="canny_thresh2" default="150"/>
+  <arg name="epsilon_ratio" default="0.02"/>
+  <node pkg="full_chain_vision_20261025_v6_1" name="shape_detector" type="shape_detector.py" output="screen">
+    <remap from="input_rgb_image" to="$(arg image_topic)"/>
+    <remap from="shape_detection_image" to="$(arg output_image_topic)"/>
+    <param name="blur_kernel" value="$(arg blur_kernel)" type="int"/>
+    <param name="canny_thresh1" value="$(arg canny_thresh1)" type="int"/>
+    <param name="canny_thresh2" value="$(arg canny_thresh2)" type="int"/>
+    <param name="epsilon_ratio" value="$(arg epsilon_ratio)" type="double"/>
+  </node>
+</launch>

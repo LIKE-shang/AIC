@@ -1,0 +1,446 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "scope": "local_readonly_version_and_evidence_inventory",
+  "local_root": "C:\\Users\\jiangzx\\Desktop\\src",
+  "nano_workspace": "/home/abot/abot_ws",
+  "remote_files_rechecked": false,
+  "robot_commands_executed_this_turn": false,
+  "hardware_access": false,
+  "runtime_or_hardware_config_changed_this_turn": false,
+  "summary": {
+    "installed_files": 19,
+    "installed_files_matching_lf": 19,
+    "preserved_dependencies_different_locally": [
+      "robot_vision/src/robot_vision_test/vision.py"
+    ],
+    "physical_laser_acceptance": "NOT_TESTED",
+    "flight_integration": "NOT_IMPLEMENTED_IN_THIS_SUBPROJECT"
+  },
+  "installer_manifest_sha256": "559dfce0ab40ebc970cc64631f3ae62dcc5916cffae0a1e9d88e613d033997eb",
+  "three_ring_installed_files": [
+    {
+      "path": "robot_vision/config/air_target_calibration_samples.template.json",
+      "local_sha256": "bd1d74872b70e60087c2617ee7aadf7d12d7fc83396d7dd32ed1c94c5fa334c1",
+      "local_sha256_lf": "9a80fb101cda063a03a42e494af1cd188e05f2769f4eebe3df86b9cc9028912c",
+      "installed_payload_sha256": "9a80fb101cda063a03a42e494af1cd188e05f2769f4eebe3df86b9cc9028912c",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/config/air_target_field_85cm.yaml",
+      "local_sha256": "0ca1e152c86e39dfc7370fcad0cc5154712bcf42768fd2563ee84a8f3c24f961",
+      "local_sha256_lf": "0ca1e152c86e39dfc7370fcad0cc5154712bcf42768fd2563ee84a8f3c24f961",
+      "installed_payload_sha256": "0ca1e152c86e39dfc7370fcad0cc5154712bcf42768fd2563ee84a8f3c24f961",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/config/circle_laser_test.yaml",
+      "local_sha256": "94553ea0b30ad5a460c866104c2c911b4987843572e6b4cc3938934b2f494217",
+      "local_sha256_lf": "f3c87d29e4d80eddb2c21159b317c63769b896c8c2e5a319b87e7749a9312a48",
+      "installed_payload_sha256": "f3c87d29e4d80eddb2c21159b317c63769b896c8c2e5a319b87e7749a9312a48",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/config/laser_hardware.yaml",
+      "local_sha256": "b219f37425d9655d541e1ba627b975b9fe26624335523b44bb973342d7eafbf5",
+      "local_sha256_lf": "4c6853a2e9120eaae165b8cd34f2b0240b17cb58b1db48251b581745c9b93531",
+      "installed_payload_sha256": "4c6853a2e9120eaae165b8cd34f2b0240b17cb58b1db48251b581745c9b93531",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/docs/AIR_TARGET_HANDHELD_CN.md",
+      "local_sha256": "c02166f72ad53ad7c77031faa3edeb23eac953f5fcf504d73c4245a1d9f9049a",
+      "local_sha256_lf": "43c8d18190ee2b0f27b6921f4901d56767cc993ee1d6d5ac36f453f449b1064e",
+      "installed_payload_sha256": "43c8d18190ee2b0f27b6921f4901d56767cc993ee1d6d5ac36f453f449b1064e",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/docs/AIR_TARGET_UPDATE_CN.md",
+      "local_sha256": "f99fc7a6b6d9d8a55241a8e34993b79957c0114997292207b950ecfa986c983c",
+      "local_sha256_lf": "f99fc7a6b6d9d8a55241a8e34993b79957c0114997292207b950ecfa986c983c",
+      "installed_payload_sha256": "f99fc7a6b6d9d8a55241a8e34993b79957c0114997292207b950ecfa986c983c",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/launch/circle_laser_test.launch",
+      "local_sha256": "da430a48d643e0e00106f32af138242d12620de407c00da6ae68d90ad40d6517",
+      "local_sha256_lf": "8ceb31ac544d4aa3483d920d651cbf03d10b0debb3533558b1dca0ce78dfa5ba",
+      "installed_payload_sha256": "8ceb31ac544d4aa3483d920d651cbf03d10b0debb3533558b1dca0ce78dfa5ba",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/launch/circle_usb_camera.launch",
+      "local_sha256": "24429ae4da0c9966482c6178245d555b8e268834bf8c9158aaf0ae16ed998134",
+      "local_sha256_lf": "e2925ebbff3facaf85a7143bb1845ffeae0590400ea07f905981a531e25bf258",
+      "installed_payload_sha256": "e2925ebbff3facaf85a7143bb1845ffeae0590400ea07f905981a531e25bf258",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/msg/LaserDecision.msg",
+      "local_sha256": "a56d79a996b7106a77d4b0396a494b367aef1cac4d72c6abf8093ba4441e45a0",
+      "local_sha256_lf": "b60200c251ce08950f1f98eb8facf92a0f768e5baf5f89f2ea02c6d41df0f188",
+      "installed_payload_sha256": "b60200c251ce08950f1f98eb8facf92a0f768e5baf5f89f2ea02c6d41df0f188",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/scripts/circle_laser_test_node.py",
+      "local_sha256": "23e78b0d11d085946954f8ec937c192d2c22ca8867d57ffcfa470fad05ec5886",
+      "local_sha256_lf": "9d4300231e9fe4ae7b26441fe97224e5b4370198162ad33be4b4b8f816bbf4e1",
+      "installed_payload_sha256": "9d4300231e9fe4ae7b26441fe97224e5b4370198162ad33be4b4b8f816bbf4e1",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/src/laser_test_bridge.cpp",
+      "local_sha256": "231de7f5a679b6428ef866a50851999216cd55ef82f1a3d9a45e5c4b29072410",
+      "local_sha256_lf": "160812506611add089625d59331f2b2bff5932c6329eebf41d79e432f1144b87",
+      "installed_payload_sha256": "160812506611add089625d59331f2b2bff5932c6329eebf41d79e432f1144b87",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/src/robot_vision_test/air_target.py",
+      "local_sha256": "98673300bfa85ebf761e48f9111d70354e9251b4ece8760b62e938d89dbdb282",
+      "local_sha256_lf": "8101d87a8b9b2a2b692913d67af1fc2951741bb3238ad1945878729f00b176ba",
+      "installed_payload_sha256": "8101d87a8b9b2a2b692913d67af1fc2951741bb3238ad1945878729f00b176ba",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/src/robot_vision_test/safety.py",
+      "local_sha256": "99f21dfcc26eb879f358e74a70fb73c60c1a163fa56b660f39c74457f60de484",
+      "local_sha256_lf": "08206b159ca716b78445e3a652d4f31473117919bded0f74bd8334d2e9bb8e04",
+      "installed_payload_sha256": "08206b159ca716b78445e3a652d4f31473117919bded0f74bd8334d2e9bb8e04",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/test/test_air_target.py",
+      "local_sha256": "0ef476f8f4bcde4225a6279070042e6be993d9ef34c2ff3a5545de82262c3fbb",
+      "local_sha256_lf": "2dec6b28826bad4a6a8918260cc258be2274bbc2a33dc5da5a808c687444db4c",
+      "installed_payload_sha256": "2dec6b28826bad4a6a8918260cc258be2274bbc2a33dc5da5a808c687444db4c",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/tools/audit_air_camera.py",
+      "local_sha256": "c283cc114134a2ba3783f775d823e70f3f5d1a6335b79fbbc122c39276ce5a96",
+      "local_sha256_lf": "e58cf04d872f911f4b20e2050684cfcb1f48e474eeabdf39b1da2c4754d15988",
+      "installed_payload_sha256": "e58cf04d872f911f4b20e2050684cfcb1f48e474eeabdf39b1da2c4754d15988",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/tools/calibrate_air_target.py",
+      "local_sha256": "b747d2845426f504be8bacf793e381fc1e6ae89b824c8051a0d8c7f7bc90eb05",
+      "local_sha256_lf": "020145f0fefb0f8f63de9c4bd4cc02dc40aee577bb8b988bfb8e4e06ef7de567",
+      "installed_payload_sha256": "020145f0fefb0f8f63de9c4bd4cc02dc40aee577bb8b988bfb8e4e06ef7de567",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/tools/replay_air_target.py",
+      "local_sha256": "8925c576a395e32b7178ee1be1d38cdd417c58daef2bd4cee85305b5dc3ea78b",
+      "local_sha256_lf": "1227cc27f7eedf7b5b476aab106f38667622b8b5f8dc6580a85d61d0e71cb2be",
+      "installed_payload_sha256": "1227cc27f7eedf7b5b476aab106f38667622b8b5f8dc6580a85d61d0e71cb2be",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/CMakeLists.txt",
+      "local_sha256": "30fd02c8214f2a984c58b1ae10652326da08c53fdaf5776d2058e7a21402256d",
+      "local_sha256_lf": "64693720f75165c3ea80c617fc39d2137c55222fe137627284d6d75b4dc35fe9",
+      "installed_payload_sha256": "64693720f75165c3ea80c617fc39d2137c55222fe137627284d6d75b4dc35fe9",
+      "matches_installer_after_lf_normalization": true
+    },
+    {
+      "path": "robot_vision/package.xml",
+      "local_sha256": "85a46f4b1048485f91a56831e066a2e597b22ed5c425a2e3e9490adde76c8676",
+      "local_sha256_lf": "f1f62840c67d12bf06b2381881a2ae7fa782f25d9d6aa810eeda3541bb4ef1d9",
+      "installed_payload_sha256": "f1f62840c67d12bf06b2381881a2ae7fa782f25d9d6aa810eeda3541bb4ef1d9",
+      "matches_installer_after_lf_normalization": true
+    }
+  ],
+  "preserved_dependencies": [
+    {
+      "path": "robot_vision/config/laser_mavros_plugins.yaml",
+      "backup_sha256": "2d1d38434edbdef3e4f4a4f68ed80a2b6989334fad41369b0d44095739fea9cb",
+      "local_sha256": "2d1d38434edbdef3e4f4a4f68ed80a2b6989334fad41369b0d44095739fea9cb",
+      "matches_original_backup_after_lf_normalization": true,
+      "deployed_by_three_ring_installer": false
+    },
+    {
+      "path": "robot_vision/launch/laser_mavros_only.launch",
+      "backup_sha256": "88b5c55f66e084f7b8b260b3c0cba7d00998c171aaf0fd5046fb8810d036b0b8",
+      "local_sha256": "88b5c55f66e084f7b8b260b3c0cba7d00998c171aaf0fd5046fb8810d036b0b8",
+      "matches_original_backup_after_lf_normalization": true,
+      "deployed_by_three_ring_installer": false
+    },
+    {
+      "path": "robot_vision/scripts/depth_preview_test_node.py",
+      "backup_sha256": "67d63daf32e85428c1af7a882547c5858f6a0235ebd29866aca2f4821ec4442f",
+      "local_sha256": "67d63daf32e85428c1af7a882547c5858f6a0235ebd29866aca2f4821ec4442f",
+      "matches_original_backup_after_lf_normalization": true,
+      "deployed_by_three_ring_installer": false
+    },
+    {
+      "path": "robot_vision/scripts/window_competition_adapter.py",
+      "backup_sha256": "2d8cdcd8ff0d409a9a871a492d706a3b85cc479368656929090cbcb250dc931b",
+      "local_sha256": "2d8cdcd8ff0d409a9a871a492d706a3b85cc479368656929090cbcb250dc931b",
+      "matches_original_backup_after_lf_normalization": true,
+      "deployed_by_three_ring_installer": false
+    },
+    {
+      "path": "robot_vision/scripts/window_test_node.py",
+      "backup_sha256": "17f1f65bbd11bc7af0e0a3e8512b2b64b6bbbc351eb8b564a9afb69c327e11e5",
+      "local_sha256": "17f1f65bbd11bc7af0e0a3e8512b2b64b6bbbc351eb8b564a9afb69c327e11e5",
+      "matches_original_backup_after_lf_normalization": true,
+      "deployed_by_three_ring_installer": false
+    },
+    {
+      "path": "robot_vision/setup.py",
+      "backup_sha256": "61c4d59f3b8aa37ced7c1bdffb0fc1bc73cae0c751bedd1bd0fa00792678b593",
+      "local_sha256": "61c4d59f3b8aa37ced7c1bdffb0fc1bc73cae0c751bedd1bd0fa00792678b593",
+      "matches_original_backup_after_lf_normalization": true,
+      "deployed_by_three_ring_installer": false
+    },
+    {
+      "path": "robot_vision/src/robot_vision_test/__init__.py",
+      "backup_sha256": "ac8f41c0ea61c88448752c78c7c3b4aff0324c268961a1602d4744a4fcaf9658",
+      "local_sha256": "ac8f41c0ea61c88448752c78c7c3b4aff0324c268961a1602d4744a4fcaf9658",
+      "matches_original_backup_after_lf_normalization": true,
+      "deployed_by_three_ring_installer": false
+    },
+    {
+      "path": "robot_vision/src/robot_vision_test/ros_images.py",
+      "backup_sha256": "b02b59f9450fbfa22f0d9626b572acbfb99b0a59f8b226672a16af7c09db6e60",
+      "local_sha256": "b02b59f9450fbfa22f0d9626b572acbfb99b0a59f8b226672a16af7c09db6e60",
+      "matches_original_backup_after_lf_normalization": true,
+      "deployed_by_three_ring_installer": false
+    },
+    {
+      "path": "robot_vision/src/robot_vision_test/vision.py",
+      "backup_sha256": "b432c45db3790c738e219b69af192fc2d9888132e341050ac882b19b15d269f2",
+      "local_sha256": "671fa18dada555477bcfbb772048d4157fb222ca100a63d99a38b0fb0d37e00c",
+      "matches_original_backup_after_lf_normalization": false,
+      "deployed_by_three_ring_installer": false
+    },
+    {
+      "path": "robot_vision/tools/audit_pwm_library.py",
+      "backup_sha256": "62a6b1e4fef0f8f202625b33e1d9433cef3610964c157070840627424df5c13c",
+      "local_sha256": "62a6b1e4fef0f8f202625b33e1d9433cef3610964c157070840627424df5c13c",
+      "matches_original_backup_after_lf_normalization": true,
+      "deployed_by_three_ring_installer": false
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "_deploy/air_target_update_20261006_v1.tar.gz",
+      "bytes": 51223,
+      "sha256": "2747eb9e51064083a1566844d293726e78a593117b3106a1f2e269c59b5aea76"
+    },
+    {
+      "path": "_deploy/air_target_installer_20261006_v1.tar.gz",
+      "bytes": 60142,
+      "sha256": "8beedd41cc3341a51c7776404dcbf312234e39c15f6973fcff8d3b9c8fac631b"
+    },
+    {
+      "path": "_deploy/robot_vision_before_airtest.sNw5nO.tar.gz",
+      "bytes": 398366,
+      "sha256": "3620802c3443c7213af2ccaefd5f2bd5db864096f8d1edba33c7204e75be360c"
+    },
+    {
+      "path": "uav_mission/lib/liblib.so",
+      "bytes": 246376,
+      "sha256": "e055c1e0468cc44c114c2ff408a6303bb9e0e9ece5fcf707fd3489dfb0e2734c"
+    }
+  ],
+  "reference_and_historical_logs": [
+    {
+      "path": "robot_vision/test/test_node_callbacks.py",
+      "bytes": 15601,
+      "sha256": "beb73bef0b2eab71ece31b7549ccb064a12a29c5b8ae6a1ad54734c7fb0871b0"
+    },
+    {
+      "path": "robot_vision/tools/audit_pwm_library.py",
+      "bytes": 1207,
+      "sha256": "62a6b1e4fef0f8f202625b33e1d9433cef3610964c157070840627424df5c13c"
+    },
+    {
+      "path": "robot_vision/config/laser_mavros_plugins.yaml",
+      "bytes": 144,
+      "sha256": "2d1d38434edbdef3e4f4a4f68ed80a2b6989334fad41369b0d44095739fea9cb"
+    },
+    {
+      "path": "robot_vision/launch/laser_mavros_only.launch",
+      "bytes": 798,
+      "sha256": "88b5c55f66e084f7b8b260b3c0cba7d00998c171aaf0fd5046fb8810d036b0b8"
+    },
+    {
+      "path": "robot_vision/test/artifacts/air_target_pwm_audit.txt",
+      "bytes": 1217,
+      "sha256": "d523b308f4ece548bcc0618d6ac6bf8d056cfe960398bb22db3efadf0559b8ff"
+    },
+    {
+      "path": "robot_vision/test/artifacts/air_target_geometry_test_run.txt",
+      "bytes": 5263,
+      "sha256": "7abd31e0c915a897dd9b08f330ec21f094f8b189a72a7a5529300db81b953f31"
+    },
+    {
+      "path": "robot_vision/test/artifacts/air_target_test_run.txt",
+      "bytes": 16839,
+      "sha256": "a2d3dccdd850b58b7eff939659574d22a0b7b8fa6248e18164ae8a579b62a694"
+    },
+    {
+      "path": "robot_vision/test/artifacts/air_target_baseline_tests.txt",
+      "bytes": 9825,
+      "sha256": "02bff231e47416bf38013099f8686479dfa090751e3a96c4891e7c9a26bd8b05"
+    },
+    {
+      "path": "_deploy/air_target_update_20261006_v1_tests.txt",
+      "bytes": 848,
+      "sha256": "10130593299a05fce6938469d7fc706965ea7db93f24dffe50be6ca8f14ce284"
+    }
+  ],
+  "evidence_directories": [
+    {
+      "nano_path": "/home/abot/air_camera_audit.1PJh8m",
+      "local_path": "_deploy/air_camera_audit.1PJh8m",
+      "local_exists": true,
+      "local_png_count": 7,
+      "json_files": [
+        {
+          "path": "_deploy/air_camera_audit.1PJh8m/all_headers.json",
+          "bytes": 59565,
+          "sha256": "884925ab7ff0ef84fc9463957d9c179ac5e518ae192a9d4dc114a24b9c1b84b6"
+        },
+        {
+          "path": "_deploy/air_camera_audit.1PJh8m/audit.json",
+          "bytes": 689,
+          "sha256": "f341aa9475fc67b4469649b542718496ffa8f99b7088081401fa94e8f9c5d9f4"
+        },
+        {
+          "path": "_deploy/air_camera_audit.1PJh8m/manifest.json",
+          "bytes": 2327,
+          "sha256": "3a5f8affbfc83e7f06c3e56aaff5ac16bf8ba07d65ae7297cde9673769a0ea0a"
+        }
+      ],
+      "remote_existence_rechecked": false
+    },
+    {
+      "nano_path": "/home/abot/air_target_replay.vjxYiK",
+      "local_path": "_deploy/air_target_replay.vjxYiK",
+      "local_exists": true,
+      "local_png_count": 14,
+      "json_files": [
+        {
+          "path": "_deploy/air_target_replay.vjxYiK/report.json",
+          "bytes": 19408,
+          "sha256": "e211af6cf1b2bdf250518a7377e3868412fbe81451ad3405ac32adb6ce8c2b58"
+        }
+      ],
+      "remote_existence_rechecked": false
+    },
+    {
+      "nano_path": "/home/abot/air_camera_audit.judOdL",
+      "local_path": "_deploy/air_camera_audit.judOdL",
+      "local_exists": true,
+      "local_png_count": 7,
+      "json_files": [
+        {
+          "path": "_deploy/air_camera_audit.judOdL/all_headers.json",
+          "bytes": 59402,
+          "sha256": "933d55b2654c7a6446be292d1fdd3d13c845cf239051695e1e8c02a07deb4ac8"
+        },
+        {
+          "path": "_deploy/air_camera_audit.judOdL/audit.json",
+          "bytes": 689,
+          "sha256": "671660481c77b5011b4e27a29fb1177257256de715efddaff43b1950ec292fa5"
+        },
+        {
+          "path": "_deploy/air_camera_audit.judOdL/manifest.json",
+          "bytes": 2331,
+          "sha256": "026890f38c2c7342decb59c150bb57d87cbce7505e0ad02d5be8408f85c2d9d1"
+        }
+      ],
+      "remote_existence_rechecked": false
+    },
+    {
+      "nano_path": "/home/abot/air_target_replay.0qvvPe",
+      "local_path": "_deploy/air_target_replay.0qvvPe",
+      "local_exists": true,
+      "local_png_count": 14,
+      "json_files": [
+        {
+          "path": "_deploy/air_target_replay.0qvvPe/report.json",
+          "bytes": 55272,
+          "sha256": "f6b065271bc8af6e76549a4ebea9aaf5c8fd2658e1984fe7c0860449cf9ddf96"
+        }
+      ],
+      "remote_existence_rechecked": false
+    },
+    {
+      "nano_path": "/home/abot/air_camera_live_audit.WfB10n",
+      "local_path": "_deploy/air_camera_live_audit.WfB10n",
+      "local_exists": false,
+      "local_png_count": 0,
+      "json_files": [],
+      "remote_existence_rechecked": false
+    }
+  ],
+  "nano_fresh_backup": {
+    "path": "/home/abot/robot_vision_before_air_install.4x81q2lu.tar.gz",
+    "sha256": "be0210ebe2b01671511e7abf954d644c5f696a06fb7e2e205ff8a549b73ae182",
+    "basis": "operator_returned_installer_output",
+    "verified_locally": false
+  },
+  "original_pwm_source": {
+    "path": "uav_mission/src/uav_mission.cpp",
+    "local_sha256": "d4a452a3a7e595c34b3c084454b898bd6037167ec4e0442d0bcf3b01570e6083",
+    "archive": "dongbu-ros.zip",
+    "member": "uav_mission/src/uav_mission.cpp",
+    "full_file_equal_lf_normalized": false,
+    "pwm_call_lines_equal": true,
+    "pwm_call_lines": [
+      {
+        "line_number": 85,
+        "code": "lib_pwm_control(20,20);"
+      },
+      {
+        "line_number": 257,
+        "code": "lib_pwm_control(100, 100);"
+      },
+      {
+        "line_number": 268,
+        "code": "lib_pwm_control(0, 0);"
+      },
+      {
+        "line_number": 305,
+        "code": "lib_pwm_control(100, 100);"
+      },
+      {
+        "line_number": 315,
+        "code": "lib_pwm_control(0, 0);"
+      }
+    ],
+    "library_api_on_design_value": 100,
+    "library_api_off_design_value": 0,
+    "physical_polarity_verified": false,
+    "note": "PWM call sites match; full mission differs in waypoints. Neither version was modified or executed this turn."
+  },
+  "operator_reported_hardware": {
+    "laser_channel": "AUX5",
+    "aux6": "unconnected",
+    "spot_color": "red",
+    "target_outer_diameters_m": [
+      0.35,
+      0.24,
+      0.12
+    ],
+    "ring_radial_width_m": 0.008,
+    "intended_working_distance_m": 0.85,
+    "working_distance_measured_and_verified": false,
+    "camera_laser_offset_calibrated": false,
+    "candidate_fcu_by_id": "/dev/serial/by-id/usb-STMicroelectronics_STM32_Virtual_ComPort_in_FS_Mode_395B37893233-if00",
+    "candidate_fcu_physical_identity_confirmed": false
+  },
+  "notes": [
+    "This is a local inventory, not a new algorithm test run or proof of current Nano state.",
+    "LF-normalized equality is explicit; raw Windows and installed Linux hashes may differ.",
+    "The local vision.py differs from the preserved Nano backup; do not overwrite window work.",
+    "Existing laser chain requires disarmed state and cannot be used unchanged during flight.",
+    "This JSON is not a runtime configuration and does not enable output."
+  ]
+}

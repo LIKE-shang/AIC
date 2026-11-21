@@ -1,0 +1,143 @@
+{
+  "revision": "20261018_ground_stage_v6_return_start",
+  "status": "GROUND_STAGE_V6_PHYSICALLY_ACCEPTED",
+  "source": "User track drawing and confirmed physical deviations, 2026-10-18",
+  "field_axes": {
+    "origin": "drawing lower-left field corner",
+    "x": "right in drawing",
+    "y": "up in drawing",
+    "units": "metres"
+  },
+  "targets_bottom_to_top": [
+    {
+      "id": "ground_1",
+      "field_xy_m": [
+        0.85,
+        1
+      ]
+    },
+    {
+      "id": "ground_2",
+      "field_xy_m": [
+        1.5,
+        2
+      ]
+    },
+    {
+      "id": "ground_3",
+      "field_xy_m": [
+        0.85,
+        3
+      ]
+    }
+  ],
+  "coordinate_status": "Field alignment supplied by user; nominal drawing coordinates transformed. Actual target arrival remains to be checked during trial.",
+  "field_to_map": {
+    "user_confirmed_start": "upper-left ring centre (actual diameter 350 mm)",
+    "user_confirmed_heading": "towards first rectangular window to the right in drawing",
+    "field_start_xy_m": [
+      0.85,
+      3.85
+    ],
+    "map_xy_from_field": "[field_x - 0.85, field_y - 3.85]",
+    "yaw_offset_rad": 0
+  },
+  "user_confirmed": {
+    "vehicle_length_m": 0.62,
+    "vehicle_width_m": 0.62,
+    "lidar_position": "vehicle centre",
+    "previously_500mm_ring_diameter_m": 0.35,
+    "other_rings_diameter_m": 0.35,
+    "window_frame_spacing_approx_m": 1,
+    "ground_targets": "placed per drawing",
+    "repeat_dimension_measurements_required": false
+  },
+  "trial_policy": {
+    "repeat_detailed_axis_calibration": false,
+    "route": "upper -> middle -> lower (extended 5cm) -> mapping origin; phase complete only after return DONE and physical stop",
+    "angular_z": 0,
+    "automatic_airborne_handoff": false,
+    "acceptance": "User judges actual arrival error; no fixed competition tolerance claimed",
+    "position_tolerance_proposed_m": 0.05,
+    "robot_radius_for_map_check_m": 0.49,
+    "retain_pose_timeout_and_abort": true,
+    "max_speed_mps": 0.4,
+    "waypoint_timeout_s": 120,
+    "dwell_s": 0.2,
+    "accel_limit_mps2": 0.3,
+    "decel_limit_mps2": 0.3,
+    "arrive_cycles": 5
+  },
+  "runtime_context": {
+    "nano_map_directory": "/home/abot/abot_ws/ground_map_aOrQKfU7",
+    "map_pcd": "map.pcd",
+    "map_yaml": "map_camera_init.yaml",
+    "localization_topic": "/localization",
+    "chassis_launch": "starrobot_bringup minimal.launch",
+    "current_map_pose_is_not_field_origin": true,
+    "route_config": "/home/abot/abot_ws/ground_map_aOrQKfU7/competition_ground_stage_v6_return_start.yaml"
+  },
+  "map_targets_execution_order": [
+    {
+      "id": "upper",
+      "map_xy_m": [
+        0,
+        -0.85
+      ]
+    },
+    {
+      "id": "middle",
+      "map_xy_m": [
+        0.65,
+        -1.85
+      ]
+    },
+    {
+      "id": "lower",
+      "map_xy_m": [
+        0,
+        -2.9
+      ],
+      "nominal_map_xy_m": [
+        0,
+        -2.85
+      ],
+      "empirical_offset_m": [
+        0,
+        -0.05
+      ]
+    },
+    {
+      "id": "return_start",
+      "map_xy_m": [
+        0,
+        0
+      ],
+      "meaning": "fixed mapping origin at upper-left ring centre, not service-call current pose"
+    }
+  ],
+  "path_check": {
+    "result": "ALL CLEAR",
+    "start_pose": [
+      0,
+      0,
+      0
+    ],
+    "robot_radius_m": 0.49,
+    "scope": "all four targets and direct return from third point to map origin",
+    "motion_commands_sent": false
+  },
+  "acceptance_record": {
+    "low_speed_mps": 0.08,
+    "user_result": "误差完全可以接受",
+    "observed_state": "DONE",
+    "command_zero": true,
+    "speed035": "User reports test completed and vehicle returned to original start; still felt slow",
+    "speed040": "Offline ideal simulation PASS, not yet tested on vehicle",
+    "v4": "User reports no noticeable heading deflection; third stop felt short by about 5 cm",
+    "v5": "Third target extended towards drawing bottom (map -Y) by 5 cm; 0.49 m footprint route check ALL CLEAR from original mapping origin. Real landing error not yet validated.",
+    "v6": "User confirms entire 4-waypoint route including return has no issues; observed DONE, index=4,count=4, zero command; pose approximately [-0.00633,-0.01948,-0.00291].",
+    "evidence": "/home/abot/abot_ws/ground_map_aOrQKfU7/acceptance.json"
+  },
+  "next_stage": "Task detection and integration; not automatically armed or airborne"
+}

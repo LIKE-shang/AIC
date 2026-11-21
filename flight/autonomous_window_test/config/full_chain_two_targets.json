@@ -1,0 +1,527 @@
+{
+  "evidence_id": "",
+  "mission": {
+    "bottom_to_fcu_m": 0.245,
+    "ground_fcu_height_m": 0.245,
+    "target_bottom_height_m": 0.9,
+    "minimum_bottom_height_m": 0.7,
+    "climb_speed_mps": 0.1,
+    "takeoff_timeout_s": 25,
+    "search_timeout_s": 10,
+    "stable_time_s": 2,
+    "mode_timeout_s": 4,
+    "landing_timeout_s": 25,
+    "max_mission_time_s": 120.0,
+    "landing_radius_m": 0.2,
+    "minimum_battery_voltage": 15.2,
+    "ground_z_span_limit_m": 0.04,
+    "companion_battery_monitor_enabled": false,
+    "pilot_landing_enabled": true,
+    "takeoff_position_goal_enabled": true,
+    "takeoff_attitude_checks_enabled": true,
+    "takeoff_vertical_velocity_enabled": false,
+    "takeoff_transient_tolerance_enabled": false,
+    "vendor_takeoff_arrival_enabled": true,
+    "simplified_takeoff_enabled": true,
+    "takeoff_horizontal_error_m": 0.12
+  },
+  "acceptance": {
+    "body_origin_verified": false,
+    "ground_height_verified": false,
+    "takeoff_column_verified": false,
+    "takeoff_landing_site_verified": false,
+    "postpass_landing_site_verified": false,
+    "fcu_failsafe_verified": false,
+    "auto_takeoff_land_verified": false,
+    "simulation_verified": false,
+    "rgbd_geometry_verified": false
+  },
+  "expected_fcu_parameters": {
+    "RC_MAP_KILL_SW": [
+      6,
+      0
+    ],
+    "RC_KILLSWITCH_TH": [
+      0,
+      0.75
+    ],
+    "RC6_REV": [
+      0,
+      1
+    ],
+    "RC_MAP_OFFB_SW": [
+      7,
+      0
+    ],
+    "COM_RC_OVERRIDE": [
+      3,
+      0
+    ],
+    "COM_OF_LOSS_T": [
+      0,
+      1
+    ],
+    "COM_OBL_RC_ACT": [
+      0,
+      0
+    ],
+    "COM_OBL_ACT": [
+      0,
+      0
+    ],
+    "NAV_RCL_ACT": [
+      3,
+      0
+    ],
+    "EKF2_HGT_MODE": [
+      3,
+      0
+    ],
+    "EKF2_EV_POS_X": [
+      0,
+      0
+    ],
+    "EKF2_EV_POS_Y": [
+      0,
+      0
+    ],
+    "EKF2_EV_POS_Z": [
+      0,
+      0
+    ],
+    "MPC_LAND_SPEED": [
+      0,
+      0.30000001192092896
+    ],
+    "COM_LOW_BAT_ACT": [
+      0,
+      0.0
+    ],
+    "COM_RC_LOSS_T": [
+      0,
+      0.5
+    ],
+    "COM_RCL_EXCEPT": [
+      0,
+      0
+    ],
+    "COM_RC_STICK_OV": [
+      0,
+      30
+    ],
+    "BAT1_N_CELLS": [
+      4,
+      0
+    ],
+    "MPC_Z_VEL_MAX_UP": [
+      0,
+      0.4
+    ],
+    "MPC_ACC_UP_MAX": [
+      0,
+      0.4
+    ],
+    "MPC_XY_VEL_MAX": [
+      0,
+      1.5
+    ],
+    "MPC_ACC_HOR": [
+      0,
+      1.0
+    ],
+    "MPC_ACC_HOR_MAX": [
+      0,
+      1.0
+    ],
+    "MPC_JERK_AUTO": [
+      0,
+      4.0
+    ],
+    "MPC_TILTMAX_AIR": [
+      0,
+      15.0
+    ]
+  },
+  "measurement_evidence": {
+    "source": "User confirmed on 2026-10-18: FCU case centre is 0.245 m above floor with vehicle resting on ground; body-bottom to case centre also 0.245 m. EKF origin equivalence remains unverified."
+  },
+  "acquisition": "airborne_rgbd",
+  "parameter_evidence": {
+    "baseline": "2026-10-18 step4_fcu_readback and step4_battery_readback",
+    "approved_changes": "Historical user-authorized COM_LOW_BAT_ACT=0 warning-only; companion battery monitor off. Other expected parameters retained as declarations. All parameters require fresh readback after power-on.",
+    "behavior_verified": false
+  },
+  "experiment": "straight_pass",
+  "site_identity": null,
+  "stage_evidence": {
+    "scope": "one_acquisition_center_then_session_frozen_line",
+    "unverified_flags_preserved": true,
+    "runtime_geometry_required_each_boot": true,
+    "prior_airborne_capture_summary": "_diagnostics/v18_1_airborne_capture_result_20261019.json",
+    "prior_geometry_is_not_a_runtime_target": true
+  },
+  "control": {
+    "enable_motion": false,
+    "enable_traverse": false,
+    "expected_width": 640,
+    "expected_height": 480,
+    "local_frame": "map",
+    "body_frame": "base_link",
+    "optical_frame": "camera_color_optical_frame",
+    "fcu_node": "/mavros",
+    "detector_node": "/window_pass_observer",
+    "evidence_id": "",
+    "camera_info_sha256": "b512e36f784e4272b0d2f412a40d13144f7e79f61c828d4631eb3dbc8a916584",
+    "vision_profile_sha256": "e3daa95beef80e82ad7d9731e5eb6e6aef124637e7e991f2bfbbaa07e0d088c6",
+    "algorithm_sha256": "c585040f506561888c8cb6098aaf15676ad8a842c9f099e7d690300bf717f658",
+    "vehicle_size_m": [
+      0.62,
+      0.62,
+      0.35
+    ],
+    "opening_size_m": [
+      1.05,
+      0.8
+    ],
+    "envelope_center_body_m": [
+      0,
+      0,
+      -0.07
+    ],
+    "camera_translation_body_m": [
+      0.08,
+      0,
+      -0.06
+    ],
+    "camera_rotation_body_from_optical_xyzw": [
+      -0.5,
+      0.5,
+      -0.5,
+      0.5
+    ],
+    "window_center_local_m": [],
+    "window_yaw_rad": 0.0,
+    "window_thickness_m": 0.001,
+    "geofence_min_m": [],
+    "geofence_max_m": [],
+    "geometry_verified": false,
+    "camera_verified": false,
+    "pose_verified": false,
+    "direction_verified": false,
+    "hold_verified": false,
+    "failsafe_verified": false,
+    "latency_verified": false,
+    "corridor_verified": false,
+    "single_controller_verified": false,
+    "opening_geometry_verified": false,
+    "pass_stage_approved": false,
+    "position_uncertainty_m": 0.05,
+    "stopping_margin_m": 0.1,
+    "clearance_margin_m": 0.04,
+    "clearance_tracking_budget_m": 0.03,
+    "control_hz": 30.0,
+    "max_loop_gap_s": 0.15,
+    "graph_timeout_s": 0.6,
+    "capture_timeout_s": 0.25,
+    "image_timeout_s": 0.25,
+    "observation_timeout_s": 0.3,
+    "pose_timeout_s": 0.15,
+    "state_timeout_s": 1.5,
+    "future_tolerance_s": 0.02,
+    "pose_sync_slop_s": 0.06,
+    "max_pose_step_m": 0.35,
+    "max_pose_speed_mps": 2.2,
+    "max_attitude_step_rad": 0.2,
+    "yaw_limit_rad": 0.0872665,
+    "tilt_limit_rad": 0.13962634015954636,
+    "confirm_frames": 8,
+    "confirm_time_s": 1.0,
+    "stability_px": 8.0,
+    "target_jump_px": 40.0,
+    "target_area_ratio": 1.35,
+    "align_gain_per_s": 0.35,
+    "align_speed_mps": 0.08,
+    "traverse_speed_mps": 0.3,
+    "max_setpoint_lead_m": 0.04,
+    "max_tracking_error_m": 0.12,
+    "max_align_distance_m": 0.2,
+    "max_align_path_m": 0.3,
+    "max_align_time_s": 30.0,
+    "max_total_time_s": 120.0,
+    "align_tolerance_m": 0.025,
+    "stable_time_s": 2.0,
+    "stable_speed_mps": 0.04,
+    "approach_min_m": 0.8,
+    "approach_max_m": 2.0,
+    "max_traverse_distance_m": 3.0,
+    "max_traverse_time_s": 55.0,
+    "post_plane_clearance_m": 0.4,
+    "arrival_tolerance_m": 0.035,
+    "stop_stable_time_s": 1.5,
+    "min_ray_plane_cos": 0.8,
+    "max_ray_range_m": 4.0,
+    "center_agreement_m": 0.06,
+    "opening_size_error_fraction": 0.12,
+    "hold_prestream_s": 1.2,
+    "max_hold_wait_s": 30.0,
+    "degraded_hold_timeout_s": 0.5
+  },
+  "budget_evidence": {
+    "model": "horizontal_cylinder_radius_0.31_height_0.35_center_z_minus_0.07",
+    "rigid_clearance_m": 0.04,
+    "effective_additional_position_and_tracking_geometry_budget_m": 0.0,
+    "continuous_tilt_occupancy_retained": true,
+    "live_cross_track_abort_m": 0.08,
+    "cross_track_abort_is_not_added_again_to_window_edges": true,
+    "accuracy_verified": false
+  },
+  "installation_confirmation": {
+    "operator_confirmed": true,
+    "date": "2026-10-19",
+    "camera_translation_body_m": [
+      0.08,
+      0.0,
+      -0.06
+    ],
+    "camera_rotation_body_from_optical_xyzw": [
+      -0.5,
+      0.5,
+      -0.5,
+      0.5
+    ],
+    "status": "operator_confirmed_approximate_installation_not_precision_calibration"
+  },
+  "battery_action_authorization": {
+    "date": "2026-10-20",
+    "operator_requested_warning_only": true,
+    "readback": [
+      0,
+      0.0
+    ],
+    "scope": "low_battery_automatic_action_only"
+  },
+  "route_policy": {
+    "mode": "one_acquisition_center_then_session_frozen_line",
+    "no_alignment": false,
+    "route_frozen_once": true,
+    "vote_rule": "2_feasible_distinct_frames_of_latest_5_within_1p2_seconds_current_frame_must_be_feasible",
+    "confirmed_geometry_rejection": "no_alignment_motion_or_pass; wait up to search_timeout for feasible centered geometry, then observed POSCTL handover",
+    "no_current_geometry": "at_most_10s_wait_then_POSCTL",
+    "postpass": "same_supervisor_POSTPASS_station_HOVER_single_target_OFF_ACK_POSCTL_readback",
+    "no_legacy_alignment": true,
+    "post_commit_visual_dependency": false,
+    "localization_binding": "boot_run_source_epoch",
+    "flight_accepted": false,
+    "live_cross_track_policy": "up_to_8cm_subject_to_frozen_aperture_per_edge_4cm_clearance_and_flight_floor",
+    "pass_distance_reference": "3_metres_from_committed_departure_not_3m_beyond_window",
+    "speed_policy": "smooth_jerk4_accel1_peak1p5_position_and_velocity_feedforward_35cm_longitudinal_limit_8cm_cross_track_aperture_bounded",
+    "terminal_capture": "2.625m fast S curve to zero velocity, then <=0.15mps reference completion; bounded stop capture within real fence; observed stop anchor same owner"
+  },
+  "exit_corridor_confirmation": {
+    "operator_confirmed_clear": false,
+    "status": "pending_new_boot_start_heading_alignment_column_and_exit_region_confirmation"
+  },
+  "preparation_status": "OPERATOR_APPROVED_DRAWING_ESTIMATE_UNBOUND_NEW_SESSION_REQUIRED",
+  "session_window": {
+    "enabled": true,
+    "horizontal_radius_m": 0.31,
+    "rigid_clearance_m": 0.04,
+    "alignment_max_distance_m": 0.2,
+    "alignment_clear_column_radius_m": 0.2,
+    "pass_cross_track_limit_m": 0.08,
+    "fast_confirmation": true,
+    "relaxed_alignment": true,
+    "fixed_pass_distance_m": 3.0,
+    "faster_pass": true,
+    "smooth_pass": true,
+    "pass_tilt_limit_rad": 0.2617993877991494,
+    "terminal_capture": true,
+    "field_bounded_alignment": true
+  },
+  "session_window_evidence": {
+    "horizontal_radius_source": "User-reported maximum horizontal radius, not a 3-D sphere",
+    "body_height_m": 0.35,
+    "body_height_source": "Existing nominal vehicle dimension, not new measurement",
+    "four_cm_is_rigid_clearance_only": true,
+    "position_or_tracking_accuracy_verified": false,
+    "map_relocalization_verified": false,
+    "flight_verified": false,
+    "deployment_status": "local_candidate_only"
+  },
+  "alignment_area_confirmation": {
+    "operator_confirmed_clear": false,
+    "center_path_radius_m": 0.2,
+    "status": "template_requires_current_site_confirmation_original_20cm_area",
+    "field_fence_alignment_authorized": true
+  },
+  "height_policy_evidence": {
+    "date": "2026-10-21",
+    "minimum_body_bottom_height_m": 0.7,
+    "operator_requested": true,
+    "target_bottom_height_m": 0.9,
+    "not_local_z_threshold": true,
+    "flight_verified": false
+  },
+  "hover_target": {
+    "enabled": true,
+    "offset_x_px": 53.25,
+    "offset_y_px": 15.484375,
+    "camera_frame_id": "circle_usb_optical_frame",
+    "image_width": 640,
+    "image_height": 360,
+    "inner_free_radius_m": 0.052,
+    "max_correction_m": 0.15,
+    "max_speed_mps": 0.04,
+    "observation_timeout_s": 0.35,
+    "acquisition_timeout_s": 15.0,
+    "settle_time_s": 0.2,
+    "exposure_s": 3.0,
+    "max_light_s": 5.0,
+    "ack_timeout_s": 2.0,
+    "centre_radius_ratio": 0.45,
+    "spot_error_limit_px": 8.0,
+    "trigger_policy": "hover_timed",
+    "hover_light_delay_s": 0.5,
+    "visual_servo_enabled": false,
+    "servo_deadband_px": 2.0,
+    "servo_gain": 0.6,
+    "require_stable_target_before_light": false,
+    "fixed_position_timed": true
+  },
+  "full_chain": {
+    "enabled": true,
+    "station_offset_forward_left_m": [
+      3.15,
+      -0.05
+    ],
+    "station_relation_confirmed": true,
+    "station_evidence": "2026-10-24 operator confirms field follows drawing and target1 near 3m stop; drawing start(0.85,3.85), upper target1(4.0,3.8), body forward=drawing right. Estimate only, not measured precision.",
+    "station_area_confirmed": true,
+    "station_reference": "takeoff_body",
+    "fixed_aim_compensation_forward_left_m": [
+      0.01954546347899043,
+      0.06721588247870776
+    ],
+    "empirical_aim_trim_forward_left_m": [
+      0.08202438661763951,
+      -0.08202438661763951
+    ],
+    "selected_target_ids": [],
+    "target_positions_forward_left_m": {
+      "1": [
+        3.15,
+        -0.05
+      ],
+      "2": [
+        3.15,
+        -1.35
+      ],
+      "3": [
+        3.15,
+        -2.65
+      ]
+    }
+  },
+  "full_chain_authorization": {
+    "scope": "supervised_window_pass_two_targets_20261024",
+    "operator_requested_test": true,
+    "target_count": 2,
+    "deferred_acceptance_checks": [
+      "body_origin_verified",
+      "fcu_failsafe_verified",
+      "simulation_verified",
+      "rgbd_geometry_verified"
+    ],
+    "deferred_control_checks": [
+      "camera_verified",
+      "pose_verified",
+      "direction_verified",
+      "hold_verified",
+      "failsafe_verified",
+      "latency_verified",
+      "corridor_verified",
+      "single_controller_verified"
+    ]
+  },
+  "target_station_estimate": {
+    "source": "_diagnostics/map_alignment_20261018/nominal_field_draft/field_geometry.json",
+    "operator_approval_date": "2026-10-24",
+    "drawing_start_xy_m": [
+      0.85,
+      3.85
+    ],
+    "drawing_target1_xy_m": [
+      4.0,
+      3.8
+    ],
+    "takeoff_body_forward_left_m": [
+      3.15,
+      -0.05
+    ],
+    "nominal_3m_endpoint_to_target_forward_left_m": [
+      0.15,
+      -0.05
+    ],
+    "station_fixed_to_takeoff_body_not_adjusted_endpoint": true,
+    "actual_postpass_transfer_limit_m": 1.0,
+    "geometry_accuracy_verified": false,
+    "old_map_relocalization_used": false
+  },
+  "speed_change_authorization": {
+    "date": "2026-10-24",
+    "operator_requested_max_speed_mps": 1.5,
+    "remove_simplified_takeoff_xy_abort": true,
+    "requested_speed_is_peak_not_guaranteed_plane_speed": true,
+    "flight_verified": false
+  },
+  "passage_tilt_change_evidence": {
+    "date": "2026-10-24",
+    "source": "operator pasted v2 live log; bag pending next power-on",
+    "pass_enter_ros": 6208.476232,
+    "fault_ros": 6209.14864,
+    "observed_tilt_rad": 0.1437000086437999,
+    "previous_limit_rad": 0.13962634015954636,
+    "pass_limit_rad": 0.2617993877991494,
+    "other_phase_limit_rad": 0.13962634015954636,
+    "geometry_recomputed_for_expanded_cone": true,
+    "fcu_parameter_change_required": false,
+    "uploaded": false,
+    "physical_pass_verified": false
+  },
+  "fixed_aim_evidence": {
+    "date": "2026-10-24",
+    "operator_requested_fixed_position_timed_trial": true,
+    "total_offset_m": 0.07,
+    "direction_basis": "image right/down ratio (53.25,15.484375), vehicle moves forward/left opposite rear/right laser displacement",
+    "metre_vector_is_estimate": true,
+    "camera_body_origin_equivalence_verified": false,
+    "physical_hit_verified": false,
+    "repeat_trials_requested": 3
+  },
+  "empirical_aim_trim_evidence": {
+    "date": "2026-10-24",
+    "operator_observation": "light landed rear-left on second ring",
+    "assumption": "second ring means 24cm diameter middle ring; 8mm radial black band; representative radius11.6cm; diagonal assumed45deg",
+    "correction_forward_left_m": [
+      0.08202438661763951,
+      -0.08202438661763951
+    ],
+    "heading_reference": "current held body heading, same as mechanical compensation",
+    "correction_is_estimate": true,
+    "residual_after_correction_verified": false,
+    "new_boot_binding_required": true,
+    "physical_hit_verified": false
+  },
+  "two_target_evidence": {
+    "source": "operator confirmed drawing layout; upper1 middle2 lower3, adjacent1.3m",
+    "must_select_two_before_binding": true,
+    "order": "ascending IDs",
+    "target1_user_observed_near_center": true,
+    "targets2and3_accuracy_verified": false,
+    "not_random": true,
+    "operator_requested_inter_target_max_speed_mps": 1.0,
+    "inter_target_speed_policy": "rest-to-rest S curve max1mps acceleration0.6 jerk1.5; short1.3m route lower peak; first postpass transfer stays0.08mps",
+    "approximate_hold_revision": "2026-10-25 user requested relaxed arrival, shorter dwell; first approach .35mps, stable arrival .12m/.08m, .2s; exposure remains 3s",
+    "field_alignment_authorization": "2026-10-25 operator requests align until actual departure ray can pass; full confirmed fence, no20cm origin column"
+  }
+}

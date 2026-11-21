@@ -1,0 +1,71 @@
+# Field profile recorded from operator confirmation on 2026-10-05.
+# Safe preview profile: calibration, live-camera and hardware output remain unconfirmed.
+# 35/24/12 cm are target OUTER diameters; 8 mm is radial ring/material width.
+diameters_m: [0.35, 0.24, 0.12]
+ring_width_m: 0.008
+diameter_definition: outer
+dimensions_confirmed: true
+polarity: dark
+blur_kernel: 3
+min_contrast: 45.0
+min_ring_radius_px: 14.0
+min_axis_ratio: 0.55
+ellipse_residual: 0.035
+ellipse_fill_tolerance: 0.10
+center_tolerance: 0.055
+ratio_tolerance: 0.055
+axis_ratio_tolerance: 0.07
+angle_tolerance_deg: 10.0
+width_relative_tolerance: 0.65
+width_pixel_tolerance: 1.5
+max_inner_obstruction_fraction: 0.02
+border_margin: 4
+track_center_ratio: 0.18
+track_scale_ratio: 0.10
+safety_margin_m: 0.005
+effective_radius_cap_m: 0.045
+working_distance_m: 0.85
+operating_envelope_confirmed: false
+live_camera_verified: false
+feedback_mode: prediction_only
+prediction_only_acknowledged: false
+calibration:
+  confirmed: false
+  calibration_id: ''
+  camera_frame_id: ''
+  image_width: 0
+  image_height: 0
+  offset_px: []
+  distance_m: 0.0
+  distance_tolerance_m: 0.02
+  outer_major_px: 0.0
+  scale_tolerance: 0.05
+  axis_ratio: 0.0
+  axis_tolerance: 0.04
+  angle_deg: 0.0
+  angle_tolerance_deg: 5.0
+  spot_radius_m: -1.0
+  error_bound_m: -1.0
+spot:
+  validated: false
+  color: red
+  min_value: 210
+  min_saturation: 100
+  min_area_px: 2.0
+  max_area_px: 120.0
+  max_aspect: 2.0
+  min_fill: 0.45
+on_frames: 5
+off_frames: 1
+hold_seconds: 3.0
+spot_acquire_timeout: 0.30
+max_on_seconds: 5.0
+image_timeout: 0.35
+max_image_age: 0.35
+future_tolerance: 0.05
+frozen_content_timeout: 0.25
+publish_edges: true
+decision_topic: /circle_laser_test/decision
+laser_status_topic: /circle_laser_test/laser_status
+detection_status_topic: /circle_laser_test/detection_status
+edges_topic: /circle_laser_test/edges

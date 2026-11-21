@@ -1,0 +1,31 @@
+# Adapter safety defaults. Values are for the measured Gemini RGB stream:
+# 640x480, rgb8, with the checker_texture detector path.
+status_topic: /window_test/status
+output_topic: /window_test/mission_target
+diagnostics_topic: /window_test/mission_target_status
+
+# Both flags must be true before this node may publish /object_position.
+allow_legacy_output: false
+publish_legacy_object_position: false
+
+expected_width: 640
+expected_height: 480
+max_capture_age: 0.8
+future_tolerance: 0.2
+require_capture_stamp: true
+on_frames: 5
+off_frames: 3
+status_timeout: 1.0
+min_width_px: 25.0
+min_height_px: 25.0
+alignment_tolerance_px: 20.0
+allowed_methods: [checker_texture, checker_contour, nested_frame]
+
+# off_frames confirms absence for diagnostics ONLY. Any invalid frame revokes
+# coordinates immediately; recovery always requires on_frames new fresh hits.
+# The old uav_mission tracker accepts "square"/"ring" and treats x/y as
+# image pixels with horizontal centre 320. Legacy mode requires 640x480.
+# z=0 means unmeasured, not a valid zero-metre range. No flight clearance.
+legacy_frame_id: square
+no_target_frame_id: no object
+publish_diagnostics: true

@@ -1,0 +1,30 @@
+<launch>
+  <!-- Ground-only visual/interface calibration. NO mission/MAVROS/motion. -->
+  <!-- Reuses the same checked RGB detector and the field-tested profile. -->
+  <arg name="start_camera" default="true"/>
+  <arg name="camera_name" default="camera"/>
+  <arg name="serial_number" default=""/>
+  <arg name="image_topic" default="/$(arg camera_name)/rgb/image_raw"/>
+  <arg name="color_width" default="640"/>
+  <arg name="color_height" default="480"/>
+  <arg name="color_fps" default="30"/>
+  <arg name="vision_config" default="$(find full_chain_vision_20261025_v6_1)/config/window_competition_vision.yaml"/>
+  <arg name="adapter_config" default="$(find full_chain_vision_20261025_v6_1)/config/window_competition_adapter.yaml"/>
+  <include file="$(find full_chain_vision_20261025_v6_1)/launch/window_test.launch">
+    <arg name="start_camera" value="$(arg start_camera)"/>
+    <arg name="camera_name" value="$(arg camera_name)"/>
+    <arg name="serial_number" value="$(arg serial_number)"/>
+    <arg name="image_topic" value="$(arg image_topic)"/>
+    <arg name="color_width" value="$(arg color_width)"/>
+    <arg name="color_height" value="$(arg color_height)"/>
+    <arg name="color_fps" value="$(arg color_fps)"/>
+    <arg name="config_file" value="$(arg vision_config)"/>
+  </include>
+  <include file="$(find full_chain_vision_20261025_v6_1)/launch/window_competition_adapter.launch">
+    <arg name="config_file" value="$(arg adapter_config)"/>
+    <arg name="expected_width" value="$(arg color_width)"/>
+    <arg name="expected_height" value="$(arg color_height)"/>
+    <arg name="allow_legacy_output" value="false"/>
+    <arg name="publish_legacy_object_position" value="false"/>
+  </include>
+</launch>

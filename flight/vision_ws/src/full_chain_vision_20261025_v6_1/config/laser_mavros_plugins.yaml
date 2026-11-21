@@ -1,0 +1,5 @@
+# Only transport state and COMMAND_LONG support. No setpoint/control plugins.
+plugin_blacklist: []
+plugin_whitelist:
+  - sys_status
+  - command

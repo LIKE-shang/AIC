@@ -1,0 +1,14 @@
+{
+  "bag": "competition_telemetry_158619422586.bag",
+  "bag_sha256": "579273aff27c1f52332fc45621bb5cb7e930a24cfbec04221d394a51486fa3a2",
+  "fault": "return_unexpected_disarm_or_landed",
+  "armed_at_fault": true,
+  "landing_state_relative_s": -0.032930850982666016,
+  "auto_land_mode_relative_s": 0.6431922912597656,
+  "mode_feedback_delay_after_landing_s": 0.6761231422424316,
+  "fault_pose": [
+    -0.03359932079911232,
+    0.03134750947356224,
+    0.8150075078010559
+  ]
+}

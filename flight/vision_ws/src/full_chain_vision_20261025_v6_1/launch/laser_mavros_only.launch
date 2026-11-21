@@ -1,0 +1,17 @@
+<launch>
+  <!-- Communication only. No mission include, no autonomous actions. -->
+  <!-- Required argument deliberately has no serial-port default. -->
+  <arg name="fcu_url"/>
+  <arg name="tgt_system" default="1"/>
+  <arg name="tgt_component" default="1"/>
+  <include file="$(find mavros)/launch/node.launch">
+    <arg name="pluginlists_yaml" value="$(find full_chain_vision_20261025_v6_1)/config/laser_mavros_plugins.yaml"/>
+    <arg name="config_yaml" value="$(find mavros)/launch/px4_config.yaml"/>
+    <arg name="fcu_url" value="$(arg fcu_url)"/>
+    <arg name="gcs_url" value=""/>
+    <arg name="tgt_system" value="$(arg tgt_system)"/>
+    <arg name="tgt_component" value="$(arg tgt_component)"/>
+    <arg name="fcu_protocol" value="v2.0"/>
+    <arg name="respawn_mavros" value="false"/>
+  </include>
+</launch>

@@ -1,0 +1,14 @@
+<launch>
+  <!-- Current milestone only: RGB aperture + raw depth measurement + console.
+       The healthy localization launch stays in its existing terminal. -->
+  <include file="$(find full_chain_rgbd_20261025_v6_1)/launch/rgbd.launch">
+    <arg name="record" value="false"/>
+    <arg name="depth_height" value="400"/>
+    <arg name="depth_candidates" value="false"/>
+    <arg name="max_width" value="480"/>
+    <arg name="enable_traversal_planning" value="false"/>
+    <arg name="node_output" value="log"/>
+  </include>
+  <node pkg="full_chain_rgbd_20261025_v6_1" type="stage_console.py" name="window_live_stage"
+        output="screen" respawn="false" launch-prefix="python3"/>
+</launch>

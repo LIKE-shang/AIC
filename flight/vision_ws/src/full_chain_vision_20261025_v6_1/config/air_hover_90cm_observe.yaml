@@ -1,0 +1,47 @@
+# Airborne observation profile for a supervised 0.9 m hover.
+# This profile records geometry only. It is intentionally uncalibrated and
+# cannot enable the laser bridge until measurements are reviewed separately.
+diameters_m: [0.35, 0.24, 0.12]
+ring_width_m: 0.008
+diameter_definition: unconfirmed
+dimensions_confirmed: false
+working_distance_m: 0.90
+operating_envelope_confirmed: false
+live_camera_verified: false
+feedback_mode: prediction_only
+prediction_only_acknowledged: false
+calibration:
+  confirmed: false
+  calibration_id: ''
+  camera_frame_id: ''
+  image_width: 0
+  image_height: 0
+  offset_px: []
+  distance_m: 0.0
+  distance_tolerance_m: 0.02
+  outer_major_px: 0.0
+  scale_tolerance: 0.05
+  axis_ratio: 0.0
+  angle_deg: 0.0
+  angle_tolerance_deg: 5.0
+  spot_radius_m: -1.0
+  error_bound_m: -1.0
+spot:
+  validated: false
+  color: unconfirmed
+  min_value: 210
+  min_saturation: 100
+  min_area_px: 2.0
+  max_area_px: 120.0
+  max_aspect: 2.0
+  min_fill: 0.45
+on_frames: 5
+off_frames: 1
+hold_seconds: 3.0
+spot_acquire_timeout: 0.30
+max_on_seconds: 5.0
+image_timeout: 0.35
+max_image_age: 0.35
+future_tolerance: 0.05
+frozen_content_timeout: 0.25
+publish_edges: true

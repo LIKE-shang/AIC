@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Ground straight run with a frozen heading.
+
+       Preconditions, all outside this file:
+         * starrobot chassis up     (starrobot_bringup/minimal.launch (rosserial))
+         * FAST-LIO up              (slam_navigation/slam_location.launch)
+         * ICP aligned to prior map (global_localization -> /map_to_odom)
+         * /localization publishing (slam_navigation/transform_fusion.py)
+       This launch starts nothing else and does not touch the map server.
+
+       Arming is explicit, and the node publishes zero until armed:
+         rosservice call /ground_straight_nav/start
+         rosservice call /ground_straight_nav/stop
+  -->
+  <arg name="config" default="$(find ground_straight_nav)/config/straight_run.yaml"/>
+  <arg name="pose_topic" default="/localization"/>
+
+  <node pkg="ground_straight_nav" type="straight_nav_node.py"
+        name="ground_straight_nav" output="screen"
+        args="--config $(arg config) --pose-topic $(arg pose_topic)"/>
+</launch>

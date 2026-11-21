@@ -1,0 +1,39 @@
+<launch>
+  <arg name="fast_confirmation" default="false"/>
+  <arg name="camera" default="true"/>
+  <arg name="record" default="false"/>
+  <arg name="process_hz" default="5.0"/>
+  <arg name="depth_candidates" default="false"/>
+  <arg name="max_width" default="480"/>
+  <arg name="enable_traversal_planning" default="false"/>
+  <arg name="node_output" default="screen"/>
+  <arg name="camera_name" default="camera"/>
+  <arg name="uvc_product_id" default="0"/>
+  <arg name="depth_height" default="400"/>
+  <arg name="log_dir" default="$(env HOME)/window_rgbd_logs"/>
+  <arg name="safety_file" default="$(find full_chain_rgbd_20261025_v6_1)/config/safety_unmeasured.json"/>
+  <include if="$(arg camera)" file="$(find full_chain_rgbd_20261025_v6_1)/launch/gemini_rgbd.launch">
+    <arg name="camera_name" value="$(arg camera_name)"/>
+    <arg name="uvc_product_id" value="$(arg uvc_product_id)"/>
+    <arg name="depth_height" value="$(arg depth_height)"/>
+    <arg name="node_output" value="$(arg node_output)"/>
+  </include>
+  <node pkg="full_chain_rgbd_20261025_v6_1" type="live_full_chain_v5.py" name="window_live_vision" output="$(arg node_output)" respawn="false" launch-prefix="python3">
+    <param name="fast_confirmation" value="$(arg fast_confirmation)"/>
+    <param name="image_topic" value="/$(arg camera_name)/rgb/image_raw"/>
+    <param name="camera_info_topic" value="/$(arg camera_name)/rgb/camera_info"/>
+    <param name="registered_depth" value="true"/>
+    <param name="registration_mode" value="software_tf"/>
+    <param name="astra_factory_contract" value="true"/>
+    <param name="camera_prefix" value="$(arg camera_name)"/>
+    <param name="depth_topic" value="/$(arg camera_name)/depth/image_raw"/>
+    <param name="depth_info_topic" value="/$(arg camera_name)/depth/camera_info"/>
+    <param name="depth_candidates" value="$(arg depth_candidates)"/>
+    <param name="process_hz" value="$(arg process_hz)"/>
+    <param name="max_width" value="$(arg max_width)"/>
+    <param name="enable_traversal_planning" value="$(arg enable_traversal_planning)"/>
+    <param name="safety_file" value="$(arg safety_file)"/>
+  </node>
+  <node if="$(arg record)" pkg="rosbag" type="record" name="window_rgbd_record" output="screen"
+        args="--lz4 --split --size=256 --max-splits=4 -O $(arg log_dir)/rgbd_$(anon session) /window_live/status /window_live/proposal /window_live/geometry /window_live/traversal /window_live/source_image /window_live/image /window_live/source_depth /window_live/source_depth_info /$(arg camera_name)/rgb/camera_info /mavros/local_position/pose /mavros/state /mavros/extended_state /tf_static /rosout"/>
+</launch>

@@ -1,0 +1,27 @@
+waypoints:
+- map:
+  - 0.0
+  - -0.85
+- map:
+  - 0.65
+  - -1.85
+- map:
+  - 0.0
+  - -2.9
+- map:
+  - 0.0
+  - 0.0
+max_speed_mps: 0.4
+min_speed_mps: 0.0
+pos_gain_per_s: 0.8
+accel_limit_mps2: 0.3
+decel_limit_mps2: 0.3
+arrive_tolerance_m: 0.05
+arrive_cycles: 5
+dwell_s: 0.2
+pose_timeout_s: 0.5
+waypoint_timeout_s: 120.0
+control_rate_hz: 20.0
+yaw_warn_rad: 0.05
+yaw_abort_rad: 0.1
+max_run_distance_m: 4.0

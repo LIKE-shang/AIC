@@ -1,0 +1,51 @@
+<launch>
+  <arg name="start_camera" default="false"/>
+  <arg name="enable_laser" default="false"/>
+  <arg name="video_device" default=""/>
+  <arg name="image_width" default="640"/>
+  <arg name="image_height" default="480"/>
+  <arg name="framerate" default="30"/>
+  <arg name="pixel_format" default="yuyv"/>
+  <arg name="io_method" default="mmap"/>
+  <arg name="image_topic" default="/usb_cam/image_raw"/>
+  <arg name="output_image_topic" default="/circle_laser_test/image"/>
+  <arg name="config_file" default="$(find full_chain_vision_20261025_v6_1)/config/circle_laser_test.yaml"/>
+  <arg name="laser_config_file" default="$(find full_chain_vision_20261025_v6_1)/config/laser_hardware.yaml"/>
+  <!-- Explicit path: does NOT depend on or launch the uav_mission package. -->
+  <arg name="pwm_library" default="/home/abot/abot_ws/src/uav_mission/lib/liblib.so"/>
+  <arg name="on_frames" default="5"/>
+  <arg name="off_frames" default="1"/>
+  <arg name="max_on_seconds" default="5.0"/>
+  <arg name="image_timeout" default="0.35"/>
+  <include if="$(arg start_camera)" file="$(find full_chain_vision_20261025_v6_1)/launch/circle_usb_camera.launch">
+    <arg name="video_device" value="$(arg video_device)"/>
+    <arg name="image_width" value="$(arg image_width)"/>
+    <arg name="image_height" value="$(arg image_height)"/>
+    <arg name="framerate" value="$(arg framerate)"/>
+    <arg name="pixel_format" value="$(arg pixel_format)"/>
+    <arg name="io_method" value="$(arg io_method)"/>
+    <arg name="image_topic" value="$(arg image_topic)"/>
+  </include>
+  <node pkg="full_chain_vision_20261025_v6_1" type="circle_laser_test_node.py" name="circle_laser_test" output="screen" required="true">
+    <rosparam command="load" file="$(arg config_file)"/>
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="output_topic" value="$(arg output_image_topic)"/>
+    <param name="enable_laser" value="$(arg enable_laser)" type="bool"/>
+    <param name="max_on_seconds" value="$(arg max_on_seconds)" type="double"/>
+    <param name="on_frames" value="$(arg on_frames)" type="int"/>
+    <param name="off_frames" value="$(arg off_frames)" type="int"/>
+    <param name="image_timeout" value="$(arg image_timeout)" type="double"/>
+    <param name="max_image_age" value="$(arg image_timeout)" type="double"/>
+  </node>
+  <!-- Absent in dry-run: no library loaded, no MAVROS service called. -->
+  <node if="$(arg enable_laser)" pkg="full_chain_vision_20261025_v6_1" type="laser_test_bridge" name="circle_laser_bridge" output="screen" required="true">
+    <rosparam command="load" file="$(arg config_file)"/>
+    <rosparam command="load" file="$(arg laser_config_file)"/>
+    <param name="enable_laser" value="$(arg enable_laser)" type="bool"/>
+    <param name="pwm_library" value="$(arg pwm_library)"/>
+    <param name="max_on_seconds" value="$(arg max_on_seconds)" type="double"/>
+    <param name="on_frames" value="$(arg on_frames)" type="int"/>
+    <param name="decision_timeout" value="$(arg image_timeout)" type="double"/>
+    <param name="max_image_age" value="$(arg image_timeout)" type="double"/>
+  </node>
+</launch>

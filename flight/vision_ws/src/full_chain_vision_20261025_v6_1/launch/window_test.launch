@@ -1,0 +1,25 @@
+<launch>
+  <arg name="start_camera" default="true"/>
+  <arg name="camera_name" default="camera"/>
+  <arg name="serial_number" default=""/>
+  <arg name="color_width" default="640"/>
+  <arg name="color_height" default="480"/>
+  <arg name="color_fps" default="30"/>
+  <arg name="image_topic" default="/$(arg camera_name)/rgb/image_raw"/>
+  <arg name="output_image_topic" default="/window_test/image"/>
+  <arg name="config_file" default="$(find full_chain_vision_20261025_v6_1)/config/window_test.yaml"/>
+  <include if="$(arg start_camera)" file="$(find full_chain_vision_20261025_v6_1)/launch/window_test_camera.launch">
+    <arg name="camera_name" value="$(arg camera_name)"/>
+    <arg name="serial_number" value="$(arg serial_number)"/>
+    <arg name="image_topic" value="$(arg image_topic)"/>
+    <arg name="color_width" value="$(arg color_width)"/>
+    <arg name="color_height" value="$(arg color_height)"/>
+    <arg name="color_fps" value="$(arg color_fps)"/>
+    <arg name="enable_depth" value="false"/>
+  </include>
+  <node pkg="full_chain_vision_20261025_v6_1" type="window_test_node.py" name="window_test" output="screen">
+    <rosparam command="load" file="$(arg config_file)"/>
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="output_image_topic" value="$(arg output_image_topic)"/>
+  </node>
+</launch>

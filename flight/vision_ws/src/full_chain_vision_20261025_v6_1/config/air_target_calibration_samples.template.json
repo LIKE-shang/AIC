@@ -1,0 +1,14 @@
+{
+  "calibration_id": "REPLACE_WITH_MEASUREMENT_RECORD_ID",
+  "camera_frame_id": "",
+  "camera_settings_record": "record device/by-id, exposure, gain, focus, resolution, crop and fixture pose",
+  "image_width": null,
+  "image_height": null,
+  "distance_m": null,
+  "distance_tolerance_m": null,
+  "pixels_per_m_min": null,
+  "measurement_error_px": null,
+  "additional_error_m": null,
+  "samples": [],
+  "sample_field_names_only": ["x_px", "y_px", "spot_radius_px", "outer_major_px", "axis_ratio", "angle_deg", "distance_m"]
+}

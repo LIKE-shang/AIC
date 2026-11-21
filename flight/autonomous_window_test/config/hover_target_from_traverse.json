@@ -1,0 +1,231 @@
+{
+  "experiment": "takeoff_land",
+  "acquisition": "usb_hover_target",
+  "evidence_id": "",
+  "site_identity": null,
+  "mission": {
+    "bottom_to_fcu_m": 0.245,
+    "ground_fcu_height_m": 0.245,
+    "target_bottom_height_m": 0.9,
+    "minimum_bottom_height_m": 0.8,
+    "climb_speed_mps": 0.1,
+    "takeoff_timeout_s": 25,
+    "search_timeout_s": 10,
+    "stable_time_s": 2,
+    "mode_timeout_s": 4,
+    "landing_timeout_s": 25,
+    "max_mission_time_s": 60,
+    "landing_radius_m": 0.2,
+    "minimum_battery_voltage": 15.2,
+    "ground_z_span_limit_m": 0.04,
+    "hover_time_s": 5,
+    "companion_battery_monitor_enabled": false,
+    "takeoff_attitude_checks_enabled": true,
+    "takeoff_vertical_velocity_enabled": false,
+    "takeoff_position_goal_enabled": true,
+    "pilot_landing_enabled": true,
+    "vendor_takeoff_arrival_enabled": true,
+    "simplified_takeoff_enabled": false
+  },
+  "acceptance": {
+    "body_origin_verified": false,
+    "ground_height_verified": true,
+    "takeoff_column_verified": false,
+    "takeoff_landing_site_verified": false,
+    "fcu_failsafe_verified": false,
+    "simulation_verified": false
+  },
+  "expected_fcu_parameters": {
+    "RC_MAP_KILL_SW": [
+      6,
+      0
+    ],
+    "RC_KILLSWITCH_TH": [
+      0,
+      0.75
+    ],
+    "RC6_REV": [
+      0,
+      1
+    ],
+    "RC_MAP_OFFB_SW": [
+      7,
+      0
+    ],
+    "COM_RC_OVERRIDE": [
+      3,
+      0
+    ],
+    "COM_OF_LOSS_T": [
+      0,
+      1
+    ],
+    "COM_OBL_RC_ACT": [
+      0,
+      0
+    ],
+    "COM_OBL_ACT": [
+      0,
+      0
+    ],
+    "NAV_RCL_ACT": [
+      3,
+      0
+    ],
+    "EKF2_HGT_MODE": [
+      3,
+      0
+    ],
+    "EKF2_EV_POS_X": [
+      0,
+      0
+    ],
+    "EKF2_EV_POS_Y": [
+      0,
+      0
+    ],
+    "EKF2_EV_POS_Z": [
+      0,
+      0
+    ],
+    "MPC_LAND_SPEED": [
+      0,
+      0.30000001192092896
+    ],
+    "COM_LOW_BAT_ACT": [
+      0,
+      0.0
+    ],
+    "COM_RC_LOSS_T": [
+      0,
+      0.5
+    ],
+    "COM_RCL_EXCEPT": [
+      0,
+      0
+    ],
+    "COM_RC_STICK_OV": [
+      0,
+      30
+    ],
+    "BAT1_N_CELLS": [
+      4,
+      0
+    ],
+    "MPC_Z_VEL_MAX_UP": [
+      0,
+      0.4
+    ],
+    "MPC_ACC_UP_MAX": [
+      0,
+      0.4
+    ]
+  },
+  "control": {
+    "enable_motion": false,
+    "enable_traverse": false,
+    "pass_stage_approved": false,
+    "local_frame": "map",
+    "body_frame": "base_link",
+    "fcu_node": "/mavros",
+    "evidence_id": "",
+    "vehicle_size_m": [
+      0.62,
+      0.62,
+      0.35
+    ],
+    "envelope_center_body_m": [
+      0,
+      0,
+      -0.07
+    ],
+    "geofence_min_m": [],
+    "geofence_max_m": [],
+    "position_uncertainty_m": 0.05,
+    "stopping_margin_m": 0.1,
+    "max_setpoint_lead_m": 0.04,
+    "max_tracking_error_m": 0.12,
+    "pose_timeout_s": 0.15,
+    "state_timeout_s": 1.5,
+    "max_loop_gap_s": 0.15,
+    "control_hz": 30.0,
+    "tilt_limit_rad": 0.0872665,
+    "yaw_limit_rad": 0.0872665
+  },
+  "budget_evidence": {
+    "status": "PROVISIONAL_COMMISSIONING_BUDGET_NOT_MEASURED_DYNAMIC_BOUND",
+    "position_uncertainty_m": 0.05,
+    "stopping_margin_m": 0.1,
+    "source": "Conservative trial budgets; static ground sampling is not dynamic accuracy or stopping validation."
+  },
+  "parameter_evidence": {
+    "baseline": "2026-10-18 step4_fcu_readback and step4_battery_readback",
+    "approved_changes": "COM_OBL_RC_ACT=0 (2026-10-19 readback), NAV_RCL_ACT=3, COM_LOW_BAT_ACT=0 (2026-10-20 user-authorized warning only, read back and saved), MPC_LAND_SPEED=0.3; bounded climb speed/acceleration 0.4 read back. Behavior acceptance unchanged.",
+    "behavior_verified": false,
+    "battery_action_policy": {
+      "date": "2026-10-20",
+      "parameter": "COM_LOW_BAT_ACT",
+      "value": 0,
+      "automatic_low_battery_action": "warning_only",
+      "voltage_and_warning_telemetry_retained": true,
+      "flight_behavior_verified": false
+    }
+  },
+  "measurement_evidence": {
+    "source": "User confirmed on 2026-10-18: FCU case centre is 0.245 m above floor with vehicle resting on ground; body-bottom to case centre also 0.245 m. EKF origin equivalence remains unverified."
+  },
+  "hover_target": {
+    "enabled": true,
+    "offset_x_px": 53.25,
+    "offset_y_px": 15.484375,
+    "camera_frame_id": "circle_usb_optical_frame",
+    "image_width": 640,
+    "image_height": 360,
+    "inner_free_radius_m": 0.052,
+    "max_correction_m": 0.15,
+    "max_speed_mps": 0.04,
+    "observation_timeout_s": 0.35,
+    "acquisition_timeout_s": 15.0,
+    "settle_time_s": 0.6,
+    "exposure_s": 3.0,
+    "max_light_s": 5.0,
+    "ack_timeout_s": 2.0,
+    "centre_radius_ratio": 0.45,
+    "spot_error_limit_px": 8.0,
+    "trigger_policy": "hover_timed",
+    "hover_light_delay_s": 2.0,
+    "visual_servo_enabled": true,
+    "servo_deadband_px": 2.0,
+    "servo_gain": 0.6
+  },
+  "source_reuse": {
+    "source_sha256": "f6d699380d05b1d931ad859ee61186d8f6bb795eff6d578900de74b9d52fc735",
+    "entry": "scripts/auto_window.py",
+    "takeoff": "mission.py position goal plus observed FCU state",
+    "handover": "mission.py POSCTL readback then pilot landing",
+    "copied_mission_keys": [
+      "bottom_to_fcu_m",
+      "ground_fcu_height_m",
+      "target_bottom_height_m",
+      "climb_speed_mps",
+      "takeoff_timeout_s",
+      "stable_time_s",
+      "mode_timeout_s",
+      "landing_timeout_s",
+      "minimum_battery_voltage",
+      "ground_z_span_limit_m",
+      "companion_battery_monitor_enabled",
+      "pilot_landing_enabled",
+      "takeoff_position_goal_enabled",
+      "takeoff_vertical_velocity_enabled",
+      "takeoff_attitude_checks_enabled",
+      "vendor_takeoff_arrival_enabled"
+    ],
+    "old_site_identity_reused": false,
+    "old_fence_reused": false,
+    "passage_permissions_reused": false,
+    "window_only_takeoff_exception_reused": false,
+    "minimum_bottom_height_m": 0.8,
+    "status": "unbound_template_not_ready_for_flight"
+  }
+}

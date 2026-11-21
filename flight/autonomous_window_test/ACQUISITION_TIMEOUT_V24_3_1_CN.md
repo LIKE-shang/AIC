@@ -1,0 +1,15 @@
+# v24.3.1首飞：确认超时与感知线程恢复（2026-10-20）
+
+用户日志2299.973 TAKEOFF，2308.269 SEARCH，2318.289获取10秒超时，2318.998实际POSCTL交还。无ADJUST/PASS，attempts=0。交还前实际最低底高0.887881m、目标0.890377m，估计器/连续性正常；不是20cm修正范围、8cm穿越阈值或最低80cm触发。
+
+前9秒多为rgbd_target_not_confirmed，2317.879和2318.220才产生两帧safe候选，10秒期限前未凑满3帧。两帧目标保持Z=0.845037，最坏底高0.873914m，证明这两帧可行，不代表第三帧一定可行或延长时间必然通过。没有减少3/5确认或放宽0.4秒追踪帧间隔/0.5秒几何新鲜度，也没有调整飞行高度门槛。
+
+感知日志2308.47已出现stable_live_metric_geometry，但该帧source早于SEARCH；2310.56和2312.79记录image_receipt_gap_exceeded，间隔0.40155/0.43206秒，确认计数清为1；处理耗时310~465ms，depth_registration约77~250ms。2319.32再次stable_live_metric_geometry已在交还后。日志节选与飞后状态见_diagnostics/v24_3_1_flight_perception_state_20261020.txt，用户完整日志v24_3_1_first_flight_20261020.log。
+
+找到本轮地面恢复的配置遗漏：恢复脚本直接执行start_components.py，而非start_perception.bash，漏了原有OPENBLAS_NUM_THREADS=1、OMP_NUM_THREADS=1、MKL_NUM_THREADS=1。/proc/6674/environ确认三个变量均未设置，旧视觉进程26线程。该遗漏是恢复流程引入，已纠正；没有A/B同场景数据，不能声称它已被证明是全部延迟/确认失败的唯一原因。
+
+飞后只读确认POSCTL/armed=false/status8/landed1，CH6=1950、CH7=1050。地面只重启/window_live_vision，未重启相机、MAVROS、LIO或pose桥，未发模式/解锁/起飞命令。新视觉PID11576，三个环境变量均已读回1，总线程21（含ROS等线程，不是整进程只有一线程）。日志/home/abot/v24_3_ground_reboot_8iCaLl/vision_threads_restored.log。地面no_complete_frame耗时约60ms，不能对比为完整RGB-D空中耗时改善证明。
+
+本地与远端v24.3.1 scripts/start_components.py均补充perception分支exec前设置三个变量，即使直接执行Python入口也保持原CPU预算。远端备份scripts/start_components.py.before_thread_restore，修改后SHA256=5381b278cbe51cf7f819442d3d2a754f64263dd346c50fd627037ac92c0160b9。原V24_3_1_SOURCE_MANIFEST/归档对应修改前文件，后续全量校验应明确此补丁，不把旧manifest当当前全匹配。337项离线回归通过，证据v24_3_1_thread_fix_tests_20261020.txt及v24_3_1_thread_recovery_20261020.txt。
+
+当前旧试验/home/abot/v24_3_1_session_pass_trial_dco4r64q已因视觉节点URI变化失效，不能重跑。无新飞行命令。需要本轮归位/朝向/原20cm范围和出口空旷/急停释放确认后重新采样绑定并预检；不自动重试。下一次如需验证完整几何处理耗时，应优先使用地面完整窗框观测或可用同场景回放，不将空场景耗时说成空中已验证。

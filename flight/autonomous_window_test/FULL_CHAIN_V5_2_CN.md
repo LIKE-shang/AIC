@@ -1,0 +1,7 @@
+# v5.2：调整区使用实际20cm机心半径，不再额外扣除未验证3cm预算
+
+本次整场地面任务4/4 DONE、返原点→起飞已成功，穿框前ADJUST被session_alignment_outside_confirmed_column中止。实录机心距起飞原点约17.003cm，额外加clearance_tracking_budget_m=.03使总数略超.20m；监督器已POSCTL交还，未PASS、未打靶。
+
+刚性圆柱会话的几何误差预算在attitude_envelope已为0，窗框边界保持4cm硬净空与15度倾角包络。现在select_target和validate_motion共用column_tracking_budget：刚性会话为0，其余会话保留旧tracking预算。真实机心仍不得超已批准20cm调整区，不扩大围栏或采纳窗框外的路径，不改变20cm单次调整上限、12cm目标跟踪界限、起飞或穿框速度。固定目标补偿、双靶1m/s、激光3秒、OFF_ACK/POSCTL不变。
+
+独立路径/home/abot/full_chain_20261025_v5_2，整场入口更新依赖此目录；新支持桥唯一包full_chain_vision_20261025_v5_2。地面yaw015规则保留；本轮不远程移动/飞行/ON。新包回归/地面预检不是实际穿框或命中验收。

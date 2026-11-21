@@ -1,0 +1,81 @@
+{
+  "source": "user-confirmed boundary distances from current vehicle centre",
+  "identity": {
+    "boot_id": "8ce02c9b-cb7b-4d3d-830f-8893cd8874c5",
+    "run_id": "77db4146571241bd80e89348e4ecbdfa",
+    "mavros": [
+      "/mavros",
+      "http://192.168.0.100:45109/"
+    ],
+    "lio": [
+      "/window_pass_lio/laserMapping",
+      "http://192.168.0.100:36007/"
+    ],
+    "pose": [
+      "/window_pass_competition_pose_session_20261013",
+      "http://192.168.0.100:45551/"
+    ]
+  },
+  "boundary_distances_m": {
+    "front": 4.5,
+    "back": 0.5,
+    "left": 1.0,
+    "right": 3.3
+  },
+  "postpass_landing_area_clear_user_confirmed": true,
+  "takeoff_overhead_clearance_verified": false,
+  "reference": {
+    "position_local_m": [
+      0.12004354838122669,
+      0.03286276458420305,
+      -0.16192716169051635
+    ],
+    "heading_rad": -0.00840697211818089,
+    "local_frame": "map",
+    "body_frame": "base_link",
+    "fcu_height_above_ground_m": 0.245
+  },
+  "oriented_horizontal_bounds_flu_m": {
+    "x": [
+      -0.5,
+      4.5
+    ],
+    "y": [
+      -3.3,
+      1.0
+    ]
+  },
+  "corners_local_xy_m": [
+    [
+      4.628291398750745,
+      0.9949964973046642
+    ],
+    [
+      4.592141844470839,
+      -3.304851547652897
+    ],
+    [
+      -0.4076814636193481,
+      -3.2628171822111454
+    ],
+    [
+      -0.3715319093394418,
+      1.0370308627464158
+    ]
+  ],
+  "ceiling_above_ground_m": null,
+  "nominal_horizontal_size_m": [
+    5.0,
+    4.3
+  ],
+  "nominal_level_rear_gap_before_uncertainty_m": 0.19,
+  "flight_enabled": false,
+  "controller_geofence_updated": false,
+  "status": "HORIZONTAL_MEASUREMENTS_RECORDED_VERTICAL_LIMIT_PENDING",
+  "nano_evidence_path": "/home/abot/window_boundary_measurement_20261018_ae124824/boundary.json",
+  "software_check": {
+    "legacy_sphere_rear_requirement_before_position_uncertainty_m": 0.582043430205315,
+    "measured_rear_boundary_m": 0.5,
+    "note": "Existing Controller.inside uses a circumscribed sphere and would reject this rear boundary even before position uncertainty. Do not enlarge measured fence or mark flight ready; envelope-aware validation needs separate implementation/test."
+  }
+}

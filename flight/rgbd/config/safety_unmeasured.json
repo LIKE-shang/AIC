@@ -1,0 +1,13 @@
+{
+  "vehicle_size_m": [0.62, 0.62, 0.35],
+  "vehicle_center_body_m": [0.0, 0.0, -0.09],
+  "position_error_bound_m": null,
+  "depth_geometry_error_bound_m": null,
+  "extrinsic_error_bound_m": null,
+  "tracking_error_bound_m": null,
+  "stopping_margin_m": null,
+  "frame_thickness_bound_m": null,
+  "geofence_min_m": null,
+  "geofence_max_m": null,
+  "bounds_source": "UNMEASURED"
+}

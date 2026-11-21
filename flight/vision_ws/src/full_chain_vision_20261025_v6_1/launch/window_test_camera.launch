@@ -1,0 +1,33 @@
+<launch>
+  <!-- Include only Gemini camera. This test uses UVC RGB, not depth. -->
+  <arg name="camera_name" default="camera"/>
+  <arg name="serial_number" default=""/>
+  <arg name="image_topic" default="/$(arg camera_name)/rgb/image_raw"/>
+  <arg name="camera_info_topic" default="/$(arg camera_name)/rgb/camera_info"/>
+  <arg name="depth_topic" default="/$(arg camera_name)/depth/image_raw"/>
+  <arg name="color_width" default="640"/>
+  <arg name="color_height" default="480"/>
+  <arg name="color_fps" default="30"/>
+  <arg name="enable_depth" default="false"/>
+  <arg name="depth_align" default="false"/>
+  <group>
+    <remap from="/$(arg camera_name)/rgb/image_raw" to="$(arg image_topic)"/>
+    <remap from="/$(arg camera_name)/rgb/camera_info" to="$(arg camera_info_topic)"/>
+    <remap from="/$(arg camera_name)/depth/image_raw" to="$(arg depth_topic)"/>
+    <include file="$(find astra_camera)/launch/gemini.launch">
+      <arg name="camera_name" value="$(arg camera_name)"/>
+      <arg name="serial_number" value="$(arg serial_number)"/>
+      <arg name="use_uvc_camera" value="true"/>
+      <arg name="enable_color" value="true"/>
+      <arg name="enable_depth" value="$(arg enable_depth)"/>
+      <arg name="depth_align" value="$(arg depth_align)"/>
+      <arg name="enable_ir" value="false"/>
+      <arg name="enable_point_cloud" value="false"/>
+      <arg name="enable_point_cloud_xyzrgb" value="false"/>
+      <arg name="enable_d2c_viewer" value="false"/>
+      <arg name="color_width" value="$(arg color_width)"/>
+      <arg name="color_height" value="$(arg color_height)"/>
+      <arg name="color_fps" value="$(arg color_fps)"/>
+    </include>
+  </group>
+</launch>

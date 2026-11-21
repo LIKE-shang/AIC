@@ -1,0 +1,12 @@
+<launch>
+  <!-- Reuse the flight stage's existing 10Hz LIO; never launch another LIO. -->
+  <node pkg="slam_navigation" type="global_localization.py" name="global_localization" output="screen">
+    <remap from="/Odometry" to="/window_pass_lio/Odometry"/>
+    <remap from="/cloud_registered" to="/window_pass_lio/cloud_registered"/>
+  </node>
+  <node pkg="slam_navigation" type="transform_fusion.py" name="transform_fusion" output="screen">
+    <remap from="/Odometry" to="/window_pass_lio/Odometry"/>
+  </node>
+  <node pkg="pcl_ros" type="pcd_to_pointcloud" name="competition_prior_cloud" output="screen"
+        args="/home/abot/abot_ws/ground_map_aOrQKfU7/map.pcd 5 _frame_id:=map cloud_pcd:=map"/>
+</launch>

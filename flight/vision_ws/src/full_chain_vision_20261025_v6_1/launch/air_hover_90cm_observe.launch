@@ -1,0 +1,32 @@
+<launch>
+  <!-- Supervised airborne observation at the existing 0.9 m hover height. -->
+  <arg name="start_camera" default="true"/>
+  <arg name="video_device" default=""/>
+  <arg name="image_width" default="1920"/>
+  <arg name="image_height" default="1080"/>
+  <arg name="framerate" default="20"/>
+  <arg name="pixel_format" default="mjpeg"/>
+  <arg name="io_method" default="mmap"/>
+  <arg name="image_topic" default="/usb_cam/image_raw"/>
+  <arg name="output_image_topic" default="/circle_laser_test/image"/>
+  <arg name="config_file" default="$(find full_chain_vision_20261025_v6_1)/config/air_hover_90cm_observe.yaml"/>
+
+  <include if="$(arg start_camera)" file="$(find full_chain_vision_20261025_v6_1)/launch/circle_usb_camera.launch">
+    <arg name="required" value="true"/>
+    <arg name="video_device" value="$(arg video_device)"/>
+    <arg name="image_width" value="$(arg image_width)"/>
+    <arg name="image_height" value="$(arg image_height)"/>
+    <arg name="framerate" value="$(arg framerate)"/>
+    <arg name="pixel_format" value="$(arg pixel_format)"/>
+    <arg name="io_method" value="$(arg io_method)"/>
+    <arg name="image_topic" value="$(arg image_topic)"/>
+  </include>
+
+  <!-- enable_laser is deliberately false: this node is observation-only. -->
+  <node pkg="full_chain_vision_20261025_v6_1" type="circle_laser_test_node.py" name="circle_laser_test" output="screen" required="true">
+    <rosparam command="load" file="$(arg config_file)"/>
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="output_topic" value="$(arg output_image_topic)"/>
+    <param name="enable_laser" value="false" type="bool"/>
+  </node>
+</launch>

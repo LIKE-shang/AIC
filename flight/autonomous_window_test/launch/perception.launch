@@ -1,0 +1,10 @@
+<launch>
+  <include file="$(find full_chain_rgbd_20261025_v6_1)/launch/rgbd.launch">
+    <arg name="fast_confirmation" value="true"/>
+    <arg name="record" value="false"/>
+    <arg name="depth_height" value="400"/>
+    <arg name="depth_candidates" value="false"/>
+    <arg name="enable_traversal_planning" value="false"/>
+  </include>
+  <include file="$(find window_pass_test)/launch/observer.launch"/>
+</launch>

@@ -1,0 +1,32 @@
+<launch>
+  <!-- Only the adapter. Optional legacy output is for disarmed inspection. -->
+  <arg name="status_topic" default="/window_test/status"/>
+  <arg name="output_topic" default="/window_test/mission_target"/>
+  <arg name="diagnostics_topic" default="/window_test/mission_target_status"/>
+  <arg name="config_file" default="$(find full_chain_vision_20261025_v6_1)/config/window_competition_adapter.yaml"/>
+  <arg name="allow_legacy_output" default="false"/>
+  <arg name="publish_legacy_object_position" default="false"/>
+  <arg name="expected_width" default="640"/>
+  <arg name="expected_height" default="480"/>
+  <arg name="max_capture_age" default="0.8"/>
+  <arg name="future_tolerance" default="0.2"/>
+  <arg name="on_frames" default="5"/>
+  <arg name="off_frames" default="3"/>
+  <arg name="status_timeout" default="1.0"/>
+  <node pkg="full_chain_vision_20261025_v6_1" type="window_competition_adapter.py"
+        name="window_competition_adapter" output="screen">
+    <rosparam command="load" file="$(arg config_file)"/>
+    <param name="status_topic" value="$(arg status_topic)"/>
+    <param name="output_topic" value="$(arg output_topic)"/>
+    <param name="diagnostics_topic" value="$(arg diagnostics_topic)"/>
+    <param name="allow_legacy_output" value="$(arg allow_legacy_output)" type="bool"/>
+    <param name="publish_legacy_object_position" value="$(arg publish_legacy_object_position)" type="bool"/>
+    <param name="expected_width" value="$(arg expected_width)" type="int"/>
+    <param name="expected_height" value="$(arg expected_height)" type="int"/>
+    <param name="max_capture_age" value="$(arg max_capture_age)" type="double"/>
+    <param name="future_tolerance" value="$(arg future_tolerance)" type="double"/>
+    <param name="on_frames" value="$(arg on_frames)" type="int"/>
+    <param name="off_frames" value="$(arg off_frames)" type="int"/>
+    <param name="status_timeout" value="$(arg status_timeout)" type="double"/>
+  </node>
+</launch>

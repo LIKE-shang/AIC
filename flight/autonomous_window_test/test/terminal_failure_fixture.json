@@ -1,0 +1,291 @@
+{
+  "frozen_straight_route": {
+    "kind": "FIXED_HEIGHT_HEADING_FINITE_ROUTE",
+    "start": [
+      0.0682724118232727,
+      -0.06947405636310577,
+      0.8380143135786057
+    ],
+    "endpoint": [
+      3.0649998263284655,
+      0.07061449831935485,
+      0.8380143135786057
+    ],
+    "direction": [
+      0.9989091381683977,
+      0.046696184894153545,
+      0.0
+    ],
+    "height_local_m": 0.8380143135786057,
+    "yaw_rad": 0.04671317200188044,
+    "length_m": 3.0,
+    "passage_geometry_tilt_limit_rad": 0.2617993877991494,
+    "smooth_trajectory": {
+      "length_m": 3.0,
+      "peak_speed_mps": 1.5,
+      "acceleration_limit_mps2": 1.0,
+      "jerk_limit_mps3": 4.0,
+      "phases": [
+        [
+          0.25,
+          4.0
+        ],
+        [
+          1.25,
+          0.0
+        ],
+        [
+          0.25,
+          -4.0
+        ],
+        [
+          0.25,
+          0.0
+        ],
+        [
+          0.25,
+          -4.0
+        ],
+        [
+          1.25,
+          0.0
+        ],
+        [
+          0.25,
+          4.0
+        ]
+      ],
+      "duration_s": 3.75
+    },
+    "command_speed_mps": 1.5,
+    "maximum_forward_lead_m": 0.35,
+    "minimum_clear_travel_m": 2.3817932645782975,
+    "requested_distance_m": 3.0,
+    "plane_distance_m": 1.5136702492194911,
+    "epoch": [
+      0,
+      0
+    ],
+    "geometry_center": [
+      1.5774150546590762,
+      0.010154608062453066,
+      0.7044911648219356
+    ],
+    "window_normal_local_m": [
+      0.9972678884671478,
+      0.07022856840392315,
+      -0.02290647969925349
+    ],
+    "minimum_center_exit_signed_distance_m": 0.40683544937578875,
+    "geometry_stamp": 1019.901561728,
+    "edge_clearance_after_budgets_m": [
+      0.03491763774893461,
+      0.11541566151982832,
+      0.17543307052182525,
+      0.1358845507506927
+    ],
+    "edge_diagnostics": [
+      {
+        "side_in_window_basis": "top",
+        "edge_start_uv_m": [
+          0.5187457201727561,
+          0.3885079173243258
+        ],
+        "edge_end_uv_m": [
+          -0.5257336914906117,
+          0.39539087864307576
+        ],
+        "translation_gradient_local": [
+          0.0003077997651745844,
+          -0.006584349425031333,
+          -1.0002371759550774
+        ],
+        "attitude_inflation_m": 0.07642553864918268,
+        "position_and_tracking_projection_m": 0.0,
+        "raw_box_clearance_m": 0.15134317639811729,
+        "required_budget_m": 0.11642553864918267,
+        "clearance_after_budget_m": 0.03491763774893461
+      },
+      {
+        "side_in_window_basis": "left",
+        "edge_start_uv_m": [
+          -0.5257336914906117,
+          0.39539087864307576
+        ],
+        "edge_end_uv_m": [
+          -0.5289593340257377,
+          -0.3961853408794292
+        ],
+        "translation_gradient_local": [
+          -0.046708794945448384,
+          0.9991788881597458,
+          -0.004616638210386279
+        ],
+        "attitude_inflation_m": 0.05165507145346332,
+        "position_and_tracking_projection_m": 0.0,
+        "raw_box_clearance_m": 0.20707073297329165,
+        "required_budget_m": 0.09165507145346333,
+        "clearance_after_budget_m": 0.11541566151982832
+      },
+      {
+        "side_in_window_basis": "bottom",
+        "edge_start_uv_m": [
+          -0.5289593340257377,
+          -0.3961853408794292
+        ],
+        "edge_end_uv_m": [
+          0.5401937706313779,
+          -0.40627597598988074
+        ],
+        "translation_gradient_local": [
+          -0.00044082024087850266,
+          0.00942987886272183,
+          1.0002128079712844
+        ],
+        "attitude_inflation_m": 0.07120270485291486,
+        "position_and_tracking_projection_m": 0.0,
+        "raw_box_clearance_m": 0.2866357753747401,
+        "required_budget_m": 0.11120270485291486,
+        "clearance_after_budget_m": 0.17543307052182525
+      },
+      {
+        "side_in_window_basis": "right",
+        "edge_start_uv_m": [
+          0.5401937706313779,
+          -0.40627597598988074
+        ],
+        "edge_end_uv_m": [
+          0.5187457201727561,
+          0.3885079173243258
+        ],
+        "translation_gradient_local": [
+          0.046692184169494944,
+          -0.9988235560072463,
+          -0.02644282583209236
+        ],
+        "attitude_inflation_m": 0.04593051582415797,
+        "position_and_tracking_projection_m": 0.0,
+        "raw_box_clearance_m": 0.22181506657485067,
+        "required_budget_m": 0.08593051582415798,
+        "clearance_after_budget_m": 0.1358845507506927
+      }
+    ],
+    "envelope_method": "horizontal_cylinder_continuous_tilt_plus_rigid_clearance",
+    "uncertainty_budget_verified": false,
+    "clearance_is_accuracy_bound": false,
+    "spatial_error_budget_m": 0.0,
+    "projected_error_budget_m": 0.11642553864918267,
+    "live_cross_track_abort_m": 0.08,
+    "attitude_inflation_m": 0.07642553864918268,
+    "expected_duration_s": 5.25,
+    "corridor_verified": false,
+    "metric_accuracy_verified": false,
+    "decision_is_conditional": true,
+    "actual_output_permitted": false,
+    "actual_departure_position_local_m": [
+      0.0682724118232727,
+      -0.06947405636310577,
+      0.7852460741996765
+    ],
+    "retained_height_reference_m": 0.8380143135786057,
+    "session_identity": {
+      "boot_id": "59f68c0e-7abc-4e58-b880-41ee69a0f083",
+      "run_id": "777a820159be44df949112cadbea706b",
+      "/mavros/state": [
+        "/mavros",
+        "http://192.168.0.100:43141/"
+      ],
+      "/window_pass_lio/Odometry": [
+        "/window_pass_lio/laserMapping",
+        "http://192.168.0.100:35237/"
+      ],
+      "/window_pass_competition/status": [
+        "/window_pass_competition_pose_5335_721693",
+        "http://192.168.0.100:45301/"
+      ]
+    },
+    "geometry_epoch": [
+      0,
+      0
+    ],
+    "geometry_source": "immutable_session_snapshot",
+    "departure_pose_stamp": 1021.747827281,
+    "localization_epoch": 0
+  },
+  "tracking": {
+    "target_position_local_m": [
+      2.9612938578714045,
+      0.06576653678545827,
+      0.8380143135786057
+    ],
+    "actual_position_local_m": [
+      3.2288107872009277,
+      0.07601338624954224,
+      0.8112131953239441
+    ],
+    "error_target_minus_actual_m": [
+      -0.2675169293295232,
+      -0.010246849464083968,
+      0.026801118254661582
+    ],
+    "error_norm_m": 0.26905130615095896,
+    "horizontal_error_m": 0.2677131027832532,
+    "vertical_error_m": 0.026801118254661582,
+    "tracking_limit_m": 0.12,
+    "horizontal_tracking_limit_m": 0.12,
+    "tracking_check": "three_dimensional",
+    "pose_stamp": 1024.946873821,
+    "airborne": true,
+    "armed": true,
+    "mode": "OFFBOARD"
+  },
+  "observed_tilt_rad": 0.09757948870715062,
+  "fault_snapshot": {
+    "phase": "PASS",
+    "reason": "straight_pass:straight_progress_outside_route",
+    "wall": 1003.32899088,
+    "ros": 1024.983324479,
+    "tracking": {
+      "target_position_local_m": [
+        2.9612938578714045,
+        0.06576653678545827,
+        0.8380143135786057
+      ],
+      "actual_position_local_m": [
+        3.2288107872009277,
+        0.07601338624954224,
+        0.8112131953239441
+      ],
+      "error_target_minus_actual_m": [
+        -0.2675169293295232,
+        -0.010246849464083968,
+        0.026801118254661582
+      ],
+      "error_norm_m": 0.26905130615095896,
+      "horizontal_error_m": 0.2677131027832532,
+      "vertical_error_m": 0.026801118254661582,
+      "tracking_limit_m": 0.12,
+      "horizontal_tracking_limit_m": 0.12,
+      "tracking_check": "three_dimensional",
+      "pose_stamp": 1024.946873821,
+      "airborne": true,
+      "armed": true,
+      "mode": "OFFBOARD"
+    },
+    "estimator": {
+      "timeout_s": 1.5,
+      "receipt_age_s": 0.5825283839999429,
+      "source_age_s": 0.582931968000139,
+      "horizontal_valid": true,
+      "vertical_valid": true,
+      "reason": "ok",
+      "localization_continuity": {
+        "ok": true,
+        "reason": "ok",
+        "epoch": 0
+      }
+    },
+    "observed_tilt_rad": 0.09757948870715062,
+    "effective_tilt_limit_rad": 0.2617993877991494
+  }
+}

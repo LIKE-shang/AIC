@@ -1,0 +1,46 @@
+{
+  "geometry_file": "",
+  "evidence_id": "",
+  "mission": {
+    "bottom_to_fcu_m": 0.245,
+    "ground_fcu_height_m": null,
+    "target_bottom_height_m": 0.9,
+    "minimum_bottom_height_m": 0.8,
+    "climb_speed_mps": 0.1,
+    "takeoff_timeout_s": 25,
+    "search_timeout_s": 10,
+    "stable_time_s": 2,
+    "mode_timeout_s": 4,
+    "landing_timeout_s": 25,
+    "max_mission_time_s": 100,
+    "landing_radius_m": 0.2,
+    "minimum_battery_voltage": 15.2,
+    "ground_z_span_limit_m": 0.04,
+    "companion_battery_monitor_enabled": false
+  },
+  "acceptance": {
+    "body_origin_verified": false,
+    "ground_height_verified": false,
+    "takeoff_column_verified": false,
+    "takeoff_landing_site_verified": false,
+    "postpass_landing_site_verified": false,
+    "fcu_failsafe_verified": false,
+    "auto_takeoff_land_verified": false,
+    "simulation_verified": false
+  },
+  "expected_fcu_parameters": {},
+  "control_overrides": {
+    "enable_motion": false,
+    "enable_traverse": false,
+    "pass_stage_approved": false,
+    "opening_size_m": [
+      1.05,
+      0.8
+    ],
+    "envelope_center_body_m": [
+      0,
+      0,
+      -0.07
+    ]
+  }
+}

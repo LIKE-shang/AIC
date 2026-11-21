@@ -1,0 +1,26 @@
+<launch>
+  <!-- Existing RGB stream is used by default. No observer, alignment controller,
+       MAVROS, localization, arming or mode service is started by this launch. -->
+  <arg name="camera" default="false"/>
+  <arg name="record" default="true"/>
+  <arg name="process_hz" default="5.0"/>
+  <arg name="image_topic" default="/camera/rgb/image_raw"/>
+  <arg name="camera_info_topic" default="/camera/rgb/camera_info"/>
+  <arg name="registered_depth" default="false"/>
+  <arg name="depth_topic" default=""/>
+  <arg name="depth_info_topic" default=""/>
+  <arg name="log_dir" default="$(env HOME)/window_live_logs"/>
+  <include if="$(arg camera)" file="$(find window_pass_test)/launch/camera_only.launch"/>
+  <node pkg="full_chain_rgbd_20261025_v6_1" type="live_full_chain_v5.py" name="window_live_vision" output="screen" respawn="false" launch-prefix="python3">
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="camera_info_topic" value="$(arg camera_info_topic)"/>
+    <param name="process_hz" value="$(arg process_hz)"/>
+    <param name="registered_depth" value="$(arg registered_depth)"/>
+    <param name="depth_topic" value="$(arg depth_topic)"/>
+    <param name="depth_info_topic" value="$(arg depth_info_topic)"/>
+  </node>
+  <!-- Processed input images preserve the exact frames used for decisions.
+       Bounded rolling storage; unrelated 30 Hz RGB recording is avoided. -->
+  <node if="$(arg record)" pkg="rosbag" type="record" name="window_live_record" output="screen"
+        args="--lz4 --split --size=256 --max-splits=4 -O $(arg log_dir)/live_$(anon session) /window_live/status /window_live/proposal /window_live/source_image /window_live/image $(arg camera_info_topic) /mavros/local_position/pose $(arg depth_topic) $(arg depth_info_topic)"/>
+</launch>

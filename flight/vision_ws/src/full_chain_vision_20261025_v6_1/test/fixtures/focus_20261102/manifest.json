@@ -1,0 +1,49 @@
+[
+  {
+    "file": "0066.jpg",
+    "expected_candidate": false,
+    "actual_light_on": false
+  },
+  {
+    "file": "0068.jpg",
+    "expected_candidate": true,
+    "actual_light_on": false,
+    "reason": "isolated_pre_ON_highlight; never evidence of laser identity"
+  },
+  {
+    "file": "0070.jpg",
+    "reason": "target_geometry_not_valid_in_JPEG_replay",
+    "expected_candidate": false,
+    "actual_light_on": true
+  },
+  {
+    "file": "0074.jpg",
+    "expected_candidate": true,
+    "actual_light_on": true
+  },
+  {
+    "file": "0096.jpg",
+    "expected_candidate": false,
+    "actual_light_on": false
+  },
+  {
+    "file": "0098.jpg",
+    "expected_candidate": false,
+    "actual_light_on": false
+  },
+  {
+    "file": "0100.jpg",
+    "expected_candidate": true,
+    "actual_light_on": true
+  },
+  {
+    "file": "0104.jpg",
+    "expected_candidate": true,
+    "actual_light_on": true
+  },
+  {
+    "file": "0071.jpg",
+    "expected_candidate": true,
+    "actual_light_on": true
+  }
+]

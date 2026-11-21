@@ -1,0 +1,126 @@
+[
+  {
+    "file": "0066.jpg",
+    "expect_new_candidate": false
+  },
+  {
+    "file": "0067.jpg",
+    "expect_new_candidate": false
+  },
+  {
+    "file": "0068.jpg",
+    "expect_new_candidate": false
+  },
+  {
+    "file": "0069.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0070.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0071.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0072.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0073.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0074.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0075.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0076.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0077.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0078.jpg",
+    "expect_new_candidate": true
+  },
+  {
+    "file": "0079.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0080.jpg",
+    "expect_new_candidate": false
+  },
+  {
+    "file": "0095.jpg",
+    "expect_new_candidate": false
+  },
+  {
+    "file": "0096.jpg",
+    "expect_new_candidate": false
+  },
+  {
+    "file": "0097.jpg",
+    "expect_new_candidate": false
+  },
+  {
+    "file": "0098.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0099.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0100.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0101.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0102.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0103.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0104.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0105.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0106.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0107.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0108.jpg",
+    "expect_new_candidate": null
+  },
+  {
+    "file": "0109.jpg",
+    "expect_new_candidate": false
+  },
+  {
+    "file": "0110.jpg",
+    "expect_new_candidate": false
+  }
+]

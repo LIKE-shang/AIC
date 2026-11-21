@@ -1,0 +1,25 @@
+# FAIL-CLOSED TEMPLATE, NOT a wiring specification. Fill after hardware audit.
+# The legacy library ALWAYS writes both auxiliary 5 and 6 (0..100 units).
+# It has NO verified "leave other channel unchanged" option.
+hardware_wiring_confirmed: false
+laser_channel: -1                # Explicitly select 5 OR 6 after tracing wiring.
+laser_on_value: -1               # Verified duty/position percent, NOT microseconds.
+laser_off_value: -1              # Do not assume off=0 for every laser board.
+other_channel_safe_value: -1     # Verified SAFE held value; another device may be attached.
+command_service: /mavros/cmd/command
+decision_topic: /circle_laser_test/decision
+laser_status_topic: /circle_laser_test/laser_status
+decision_timeout: 0.35             # Wall time since last successful image request.
+service_call_timeout: 2.0        # Bounded worker, unresponsive service -> OFF fault/retry.
+retry_interval: 0.3
+off_refresh_interval: 1.0
+shutdown_off_attempts: 3
+max_image_age: 0.35
+future_tolerance: 0.05
+state_timeout: 3.0
+on_frames: 5
+# Extra field interlocks: placeholders, NEVER treat repository defaults as proof.
+physical_isolation_confirmed: false   # removed propellers / equivalent motor isolation
+independent_cutoff_confirmed: false   # tested laser cutoff independent of host/ROS
+output_mapping_confirmed: false       # firmware behavior of ALL command-187 fields audited
+max_on_seconds: 5.0                   # independent wall-time exposure ceiling

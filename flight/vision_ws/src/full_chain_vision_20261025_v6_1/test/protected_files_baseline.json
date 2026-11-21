@@ -1,0 +1,1398 @@
+[
+  {
+    "path": "agv_mission/CMakeLists.txt",
+    "hash": "BA66BD5530FDD392A56423BE28A033603A357F42B12A7B4C0F7F1024A60FA7F8"
+  },
+  {
+    "path": "agv_mission/package.xml",
+    "hash": "1AE45D30222445976C7339472151407B062B2509D21419C8D4F669CFE0F552E0"
+  },
+  {
+    "path": "agv_mission/lib/liblibrary.so",
+    "hash": "5E0B674FBA9EE5936CF25B1791FC40678F09DAA4B60E3AEDD1C4E55AB8A6B737"
+  },
+  {
+    "path": "agv_mission/msg/ctrl_mode.msg",
+    "hash": "CFC01E92E20325A67DDACA092693307ED41C7CE8BC560EF5FFCA7F66693365F9"
+  },
+  {
+    "path": "agv_mission/src/agv_mission.cpp",
+    "hash": "184E84F3107A89B974EB2043407C3120ECD6124700544C825BA00AA597B91C40"
+  },
+  {
+    "path": "uav_mission/CMakeLists.txt",
+    "hash": "552BB18BB001DB8E9B1F3C49EC0D2CDA887B2FF5AC322A0DCAE9BDEE890473AB"
+  },
+  {
+    "path": "uav_mission/package.xml",
+    "hash": "2EC6F1E857BB434059C1D26A3B8010DCFE5D117A875989300762A47004CC7499"
+  },
+  {
+    "path": "uav_mission/readme.txt",
+    "hash": "3A1B50B1A115C2E5C95A186FF04A17C315E5FC748BF692D3FDCF84A5F19F2CDD"
+  },
+  {
+    "path": "uav_mission/include/lib_library.h",
+    "hash": "300AF388DB06C9036CC29E79466EDD1708CF79101BE24535C2B89A5F618284CE"
+  },
+  {
+    "path": "uav_mission/include/uav_mission.h",
+    "hash": "0B91BE22B870455685FD15F7E751E276FE90DA5947243B403A1C7B55E302514B"
+  },
+  {
+    "path": "uav_mission/include/uav_mission.h.bak",
+    "hash": "0B91BE22B870455685FD15F7E751E276FE90DA5947243B403A1C7B55E302514B"
+  },
+  {
+    "path": "uav_mission/launch/uav_mission.launch",
+    "hash": "A63D02329065B71ECBD4207D8372015023D4D32E264223DF53AF58181E59F066"
+  },
+  {
+    "path": "uav_mission/lib/libapi.so",
+    "hash": "640EF4951EB1162CDD98953C336A620F64B54628CF0414C7C6988D06F421291B"
+  },
+  {
+    "path": "uav_mission/lib/liblib.so",
+    "hash": "E055C1E0468CC44C114C2FF408A6303BB9E0E9ECE5FCF707FD3489DFB0E2734C"
+  },
+  {
+    "path": "uav_mission/src/.uav_mission.cpp.swp",
+    "hash": "F329B875D4EE4A1D66555AC92FB416ACA073E0EDDB6CC67EE75334E1DBB9F0D3"
+  },
+  {
+    "path": "uav_mission/src/uav_mission.cpp",
+    "hash": "D4A452A3A7E595C34B3C084454B898BD6037167EC4E0442D0BCF3B01570E6083"
+  },
+  {
+    "path": "uav_mission/src/uav_mission.cpp.bak",
+    "hash": "D4A452A3A7E595C34B3C084454B898BD6037167EC4E0442D0BCF3B01570E6083"
+  },
+  {
+    "path": "complete_mission/CMakeLists.txt",
+    "hash": "5494BEEB834EDB86A4F04F41C5BFE4DF6B05F9E4E7164C9F2A0B1F95ACCA7558"
+  },
+  {
+    "path": "complete_mission/package.xml",
+    "hash": "088D344BAB922A5D6BF7D4E51BD719410D9D0F5E729644C0A744B989279E1A0F"
+  },
+  {
+    "path": "complete_mission/readme.txt",
+    "hash": "3A1B50B1A115C2E5C95A186FF04A17C315E5FC748BF692D3FDCF84A5F19F2CDD"
+  },
+  {
+    "path": "complete_mission/include/complete_mission.h",
+    "hash": "D72084F8FB5494F5BF07D6D76513CAE098535C0577ADDE915C14BA4F713B2FA8"
+  },
+  {
+    "path": "complete_mission/include/lib_library.h",
+    "hash": "300AF388DB06C9036CC29E79466EDD1708CF79101BE24535C2B89A5F618284CE"
+  },
+  {
+    "path": "complete_mission/launch/mission.launch",
+    "hash": "BCA013CDFFE57A1E33F0AB970ED1FEF18E92E2EF4093263DDA2521B00B1872F5"
+  },
+  {
+    "path": "complete_mission/lib/libapi.so",
+    "hash": "640EF4951EB1162CDD98953C336A620F64B54628CF0414C7C6988D06F421291B"
+  },
+  {
+    "path": "complete_mission/lib/liblib.so",
+    "hash": "E055C1E0468CC44C114C2FF408A6303BB9E0E9ECE5FCF707FD3489DFB0E2734C"
+  },
+  {
+    "path": "complete_mission/src/.complete_mission.cpp.swn",
+    "hash": "2F66C2568E2532590FF5F3652E68AC6A3AF3292226C3D3EA9297E16E37DDA1A3"
+  },
+  {
+    "path": "complete_mission/src/.complete_mission.cpp.swo",
+    "hash": "B391256F670DC3A47F3D37F4F19DD44DBBC15D41DE506D7BF5F6D6CE34AC5264"
+  },
+  {
+    "path": "complete_mission/src/.complete_mission.cpp.swp",
+    "hash": "78172FB0EDC726BC0504BEA7333B8684B2E02321DFC9F48DCC98AEAA42FA76CE"
+  },
+  {
+    "path": "complete_mission/src/complete_mission_old.cpp",
+    "hash": "0B52E8DE46651CB675E51FF1B45968FD586640FE9A0D3F0DB5AE2A8DB3552F4E"
+  },
+  {
+    "path": "complete_mission/src/complete_mission.cpp",
+    "hash": "3064CC500CFF8D2C61E852A31731076943E3264C8F283EF42A99A9A9BC2F50BF"
+  },
+  {
+    "path": "lib_library/CMakeLists.txt",
+    "hash": "41096585C0843EB1491C2B255C7A18C510045CA8024436654DF761618A423A20"
+  },
+  {
+    "path": "lib_library/package.xml",
+    "hash": "002ED8E491FCA0A14B8DB190898D0D09DBB53E99D86C796D6332BA20A83AEBE8"
+  },
+  {
+    "path": "lib_library/include/lib_library.h",
+    "hash": "731D26044A05A40F474C887E4EBC732230DE04F5E562CDC91139198F7D8B800F"
+  },
+  {
+    "path": "lib_library/msg/ctrl_mode.msg",
+    "hash": "CFC01E92E20325A67DDACA092693307ED41C7CE8BC560EF5FFCA7F66693365F9"
+  },
+  {
+    "path": "ros_astra_camera-main/.clang-format",
+    "hash": "808B9BDA712DB32EFCF924B2BE4B71EEBBF884764785320F0ACF19A9E301FD13"
+  },
+  {
+    "path": "ros_astra_camera-main/.gitignore",
+    "hash": "CA8987BB662A192703925BB41C0725CE8686285F0387E8D4E488347B2080DD50"
+  },
+  {
+    "path": "ros_astra_camera-main/.make_deb.sh",
+    "hash": "20EEEA11DDC8D8775EA8D8AFB7F6024B073585D55CD6B430EEDD664E09F438E5"
+  },
+  {
+    "path": "ros_astra_camera-main/56-orbbec-usb.rules",
+    "hash": "BAA9102EEE8B84E704D04FD3A3B68B2CE8075D65F2BAC4144F591F36A1F7AD32"
+  },
+  {
+    "path": "ros_astra_camera-main/CHANGELOG.rst",
+    "hash": "2D6ACA9CC6CF73DF82BBB4AAED60DE37EEF3725CE61465CEC1C68850592F55CD"
+  },
+  {
+    "path": "ros_astra_camera-main/CMakeLists.txt",
+    "hash": "D31A480EC7B282C4F3C5ED128987882320D81BF4F60B88590B337AAD43AEA386"
+  },
+  {
+    "path": "ros_astra_camera-main/LICENSE",
+    "hash": "C71D239DF91726FC519C6EB72D318EC65820627232B2F796219E87DCF35D0AB4"
+  },
+  {
+    "path": "ros_astra_camera-main/package.xml",
+    "hash": "3C80C78A5CBB0730265E232956C653BD99FC04586D47750F10A2D29E82219772"
+  },
+  {
+    "path": "ros_astra_camera-main/README.md",
+    "hash": "31EB6394C35BAF35E0F183D2D98587930630951FB14AC2C8F6A686BBCD255EAC"
+  },
+  {
+    "path": "ros_astra_camera-main/cfg/Astra.cfg",
+    "hash": "8202E512D1879B6CCA192481BAE2DBD80E96CCCB669F25DF5C37A0E7383F56F6"
+  },
+  {
+    "path": "ros_astra_camera-main/dependencies/libuvc_master_d3318ae72.zip",
+    "hash": "11D13F8DEB26CCC33E56EEFAFDE5C845FFDD083053DAD4006571683856837535"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/constants.h",
+    "hash": "A3313434262EDD7E7CD0235BE0E7B36D269AFC0E72F26FFDF7C7FC6832E61042"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/d2c_viewer.h",
+    "hash": "F4E96A1D28D59B5180536BAC8BC6D6EEA4D210E46D21343975BE72023356B81B"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/json.hpp",
+    "hash": "9279DC616AAC67EFCE68967F118051B50236612B90572E059783D368BD78687E"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/ob_camera_node_factory.h",
+    "hash": "E5CFFA4F59E5D816D95DCEEBDE8A8D76A78B44FB425A443AB7AC866FB9CFBA66"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/ob_camera_node.h",
+    "hash": "87F8F45B27C3321370264F76DC0740F432FE1F9F1E2B761AA2F2FCEA44258654"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/ob_context.h",
+    "hash": "3E34CF077FEB22B8013D0976A854F80A1B4B86FE5C68132D626A3BBC4E92D782"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/types.h",
+    "hash": "4C75BDC75A29EDAD79B50C0EC0F01D085E08431FA4A593ADE1451D6B43FCE74A"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/utils.h",
+    "hash": "4B29F2FD91E23D268415EE717529EDFDE4AF92B850C3B7F14FD3DB0E5F345604"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/uvc_camera_driver.h",
+    "hash": "25912F5C8E4E9D5592681308E103AEBCF054B5BDF8BABDF02C5316D8D2A7CA2E"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/point_cloud_proc/depth_conversions.h",
+    "hash": "A5D56B2B5D1F0CAE9326A3716B49BAB7846107F7B04C25E40CCCCE057D1DCDC7"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/point_cloud_proc/depth_traits.h",
+    "hash": "46D8A490A5BDF9DFA1AA4EB51255221686FBE84354D26E62569669115BB1DB70"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/point_cloud_proc/point_cloud_proc.h",
+    "hash": "66C2A1E6EDB84786F232823F9CE09F8F6C2A2EA976DFA14745B823834821F6A2"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/point_cloud_proc/point_cloud_xyz.h",
+    "hash": "3CDAE9A5FC7A274D5426C9513F2544E56F316735512FE80385C2E0870B388AAB"
+  },
+  {
+    "path": "ros_astra_camera-main/include/astra_camera/point_cloud_proc/point_cloud_xyzrgb.h",
+    "hash": "B959A63CCE6FE1F0E2C564414F7E2245817BBDE7DD05D313CB731FC15B7B62E5"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/KinectProperties.h",
+    "hash": "1E122AFAB1A1C74677DC94280C8F9EC7C904FD2DC54240D6BBE006FA0F66A5CB"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OniCAPI.h",
+    "hash": "4337420B665AFFAC519896BCFD27C56B9563C6A3943102B943E8CFE2353230B9"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OniCEnums.h",
+    "hash": "8BCFDAD8084ADF4FAEE0560803C7FBB67F627F4A57B491B297D52085B112BC84"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OniCProperties.h",
+    "hash": "891D1B8126E5519D9806554D9229239B911ADD5469B66FC9913BE55AD0F63D24"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OniCTypes.h",
+    "hash": "796B7DE397376F45995FD4841BAF5DB98187786EAC1BF3F4C9ED587AE27F4333"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OniEnums.h",
+    "hash": "5A8D5897A2929C3153A8091354E1B1153A1C94892FEEAA58430475606D2E82DA"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OniPlatform.h",
+    "hash": "4524691DB715B4F446A596C7D39455C68884D626C7C2526C5A10BC2AFABC3CE2"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OniProperties.h",
+    "hash": "4B67377C3B1DE95C59B944437E41DD408BE1D55EB74BC565379C40AD529CCC93"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OniTest.h",
+    "hash": "27843EB2D009D5C88399B1B123930B6AB7DB9B5A2131028428B4F8DC2818BED2"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OniVersion.h",
+    "hash": "09CA675CD00197F1246D8E225948C305845A313354146680EF898B8743746D19"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/OpenNI.h",
+    "hash": "8D42D911E93A5C855513BAAC0C5CB5762C65B43B0DFC12D79E9DDCBD95C07708"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/PrimeSense.h",
+    "hash": "B8250A2F6AD1B90875854A8DE616E7ED3A71040A5561CB00ADA216D2EACE8479"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/PS1080.h",
+    "hash": "BEA1EBFC26DE18CE3BA4403BC77F06CDC5EB4B423E55BAA1344F64ABA6463640"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/PSLink.h",
+    "hash": "8235EED426C9880FAE76BA88A8DCF6FD0176AFACCBBBE40645B99B473546752E"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/SonixCamera.h",
+    "hash": "810402EB694FBE185D21360DFCC262FB14FCBC3C17EFDEB315FBDB0108870B1C"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/util.h",
+    "hash": "FE69CC8EEF16900C5009CE2557BA5C06654083E4BA7762F296B10D89DD160C72"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/Android-Arm/OniPlatformAndroid-Arm.h",
+    "hash": "1EC4D9E46F8D4F967E2381097379D483E8F631631301FDA776219DB6F958CDB7"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/Driver/OniDriverAPI.h",
+    "hash": "5D02BFA4B0DDEABE3B0BE650E287BF3A178E9B942543DAD95B1246E5D5C802F0"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/Driver/OniDriverTypes.h",
+    "hash": "9F34B4B77C4FD7F3A692E584617C56BD77B992CA8F8CBF85C004E4215DBD5856"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/Linux-Arm/OniPlatformLinux-Arm.h",
+    "hash": "10465FF0183AA35EB65F9FFCF456124F647D466FA0B6E2C86296B280E86FC6E5"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/Linux-x86/OniPlatformLinux-x86.h",
+    "hash": "73C72660BC66D6C181C7DAC014A9E0FB6685D3A93BCC8A261BD9084294992185"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/MacOSX/OniPlatformMacOSX.h",
+    "hash": "AD18841D9103EF5E3FCFB8D90A44EA20EF210A2A87F18F1BF85DDDC44F21DCEA"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2/Win32/OniPlatformWin32.h",
+    "hash": "8A98D67130667A9D954052A5DC6A27A5589748A7074CC7AEA5E4EF23BEAB4F0C"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm/libOpenNI2.so",
+    "hash": "0ACDEC453ECA59355DD1074225CA58F3F272CCD3692CFE62661153FEF7F7B1CA"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm/OpenNI.ini",
+    "hash": "3896E8F831C6A56576E9E93A2E5B3E1D3FA72041E7D01E1D7F23B7CD907E7EFF"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm/PS1080Console",
+    "hash": "6442AED73DDBA49AE626050668DD1DE38520CA2618911A4FC34C659E9942A67B"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm/SimpleRead",
+    "hash": "E6FCAB92C989B86CECD785B4E6D07CB7F3253DFBD7DC4392B021ACC0ADB64BBA"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm/OpenNI2/Drivers/libOniFile.so",
+    "hash": "D1A33F3EA0B05CB79037BE806B5414BD63EAEC17B09402C17C220180836CF39E"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm/OpenNI2/Drivers/liborbbec.so",
+    "hash": "7003449539F42F59BA1FD942A8632E87BF209E0E3C9DFF6954596D0051659C9A"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm/OpenNI2/Drivers/OniFile.ini",
+    "hash": "F50A20CA76350F8E5E81B50477714F9A1B1DB9B49047F5089B90644526BA9505"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm/OpenNI2/Drivers/orbbec.ini",
+    "hash": "BD8F6A89A7D9E659F2F6B998393B145ECA7D33D1E499DD036BA914CD0DACCE32"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm64/libOpenNI2.so",
+    "hash": "7F0DFCA9067DE833D8AB92BEAE21250DF9150D0EFE5265BF0A5497F98771FF07"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm64/NiViewer",
+    "hash": "5238EEB647A9BD56A6DCD4F9AB375D4FD23B730C0C2F3C3582099EFFEAB02B3D"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm64/OpenNI.ini",
+    "hash": "3896E8F831C6A56576E9E93A2E5B3E1D3FA72041E7D01E1D7F23B7CD907E7EFF"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm64/PS1080Console",
+    "hash": "E8B8097AA4CFA2D5934514D7885E5A0B1FFB8C1C8BB2AA985C113EF465544BDA"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm64/SimpleRead",
+    "hash": "212554C35768A8F7DE897B1FF8C7818F980635401EE06B80BAB41375EA135E5B"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm64/OpenNI2/Drivers/libOniFile.so",
+    "hash": "3D3FD4C42A42A5475C30E6FFB8BA37F320DBDA7425FE675E9D6DE3DCBEB8A373"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm64/OpenNI2/Drivers/liborbbec.so",
+    "hash": "ABDEF7A830793579930D5889544AA5D1C3F2C4614293F332FD22C2E9CC2581ED"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm64/OpenNI2/Drivers/OniFile.ini",
+    "hash": "F50A20CA76350F8E5E81B50477714F9A1B1DB9B49047F5089B90644526BA9505"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/arm64/OpenNI2/Drivers/orbbec.ini",
+    "hash": "BD8F6A89A7D9E659F2F6B998393B145ECA7D33D1E499DD036BA914CD0DACCE32"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/x64/libOpenNI2.so",
+    "hash": "29E9CAFEA8FEC360EDF50F88E2AFC5B4B793664D28B6D91E144095893F0EFE17"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/x64/NiViewer",
+    "hash": "801EA8C944D7AB0EE21CBA8E5DC937AA7566C261EE8462010E32151A4CE21EB6"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/x64/OpenNI.ini",
+    "hash": "3896E8F831C6A56576E9E93A2E5B3E1D3FA72041E7D01E1D7F23B7CD907E7EFF"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/x64/PS1080Console",
+    "hash": "FB4E441517CDCA47E8A7E98063170AC542970A5342F650DFC7F1239A3E058562"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/x64/SimpleRead",
+    "hash": "0D2AD9FD3BAC73282E29DC8C940ECA45C60C47E456881DBAB0FD2145E5F93583"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/x64/OpenNI2/Drivers/libOniFile.so",
+    "hash": "22F17086E5058904F5DF76E7CFFCA9F37A914286F50467E76E78B0F62669CBAB"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/x64/OpenNI2/Drivers/liborbbec.so",
+    "hash": "116AADE45A425AF1DBBF50C1AFEC227C415594B78A187BF9BD2C2254C56FEE3E"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/x64/OpenNI2/Drivers/OniFile.ini",
+    "hash": "F50A20CA76350F8E5E81B50477714F9A1B1DB9B49047F5089B90644526BA9505"
+  },
+  {
+    "path": "ros_astra_camera-main/include/openni2_redist/x64/OpenNI2/Drivers/orbbec.ini",
+    "hash": "BD8F6A89A7D9E659F2F6B998393B145ECA7D33D1E499DD036BA914CD0DACCE32"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/astra_pro (copy).launch",
+    "hash": "743A65226CABBB577CAFB454969758BA4290FFB730421269A8C36817FAE90F70"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/astra_pro_plus.launch",
+    "hash": "B2DF31F951B11F3CCE443E28C6AACF0E3FF3445A07B553E853CC7E2566049B69"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/astra_pro.launch",
+    "hash": "424241B4EBB02FE8AD258D4C984A3467C0928CA4249BC38EEA86471373DE958D"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/astra.launch",
+    "hash": "885F45DF516779D7D7DDE606C8320F107A2293103A5226894E273424C1023527"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai_dc1.launch",
+    "hash": "A3759ADFF99B6D7A99E0AD17E60293EA22D8942A257CECEE0BC0816F427448C8"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai_dcw.launch",
+    "hash": "57301521C4CD40765C18255E177A171A8CED78A26123853A7C41A5EEA565F879"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai_dcw2.launch",
+    "hash": "A177EAB904DD179EFD0FB7BFE24BF19439A71E4284B18E9AEB8EA6835F3EA23A"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai_dw.launch",
+    "hash": "263123FA169C3E350D39DF66D524AEFA578679F2EF0AA3B1AA5B325CB3911B4A"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai_dw2.launch",
+    "hash": "811EADB7C0655A7D4E3E8B71BA9BEB2600F1F68D9E8F3F31025EF188E01D7880"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai_max_pro.launch",
+    "hash": "B96C99DB2A4005268594A4A1564B9C8E71A8ACB2AA107B3E4A71EBD853B7E841"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai_max.launch",
+    "hash": "5276B7648ED849D245ADF23811EF8A149D38173BBC391B6E94705E4B66327C0F"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai_pro.launch",
+    "hash": "051BE0433BDAC058C995EE0E54BCFAFB7CAD482FDE684DED6CC0209CC05597DE"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai_u3.launch",
+    "hash": "75F9ADA995AC961D0B4DDDB7D86D591F57DC5392165663F4A905709A24231B2E"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/dabai.launch",
+    "hash": "25DEEF3FBD9F45A20B90181B777ED25C4CC5571380E919082F75E0CD4EB72CF3"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/deeyea.launch",
+    "hash": "19214A1759C915B1C07907D55DADDE95D82BAA4932CDAC73F2FC4F34A4B3E685"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/embedded_s.launch",
+    "hash": "BA72FC9CA4BBDED2113CE772B90870039C091C16F9F59C81DE9C8332DAB0EBCD"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/embedded_u3.launch",
+    "hash": "BA72FC9CA4BBDED2113CE772B90870039C091C16F9F59C81DE9C8332DAB0EBCD"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/gemini_e_lite.launch",
+    "hash": "BE870D9616D3CEB9FA3A1080A2E7D2F62C9903778DB5B9A022A1CC090242F242"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/gemini_e.launch",
+    "hash": "3BE47F11C2365FA150EF90658289FB48D7295789E5BE52796136D8872C921C62"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/gemini_uw.launch",
+    "hash": "AE7AA6BB2D8750061FC3D2D52320D3782E3647AE533808975EC21AC46ADA208F"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/gemini.launch",
+    "hash": "424241B4EBB02FE8AD258D4C984A3467C0928CA4249BC38EEA86471373DE958D"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/list_devices.launch",
+    "hash": "DCEFAE814357DF78C945566090045ACF206BA18DF3B225AC6F2A0F0336FDDB5E"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/multi_astra.launch",
+    "hash": "A57AACDF5322F0F27DE5F8E04BB5612991E0526A3BB3CC86895C70BE1B719243"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/multi_dabai_dcw.launch",
+    "hash": "94300C4CFD73DE7B6AEE1DCFAA7135090C653F08C9D15109C6597E24F572DF51"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/multi_dabai_dcw2.launch",
+    "hash": "C0672239EDF672A0694BAE9875F44D63195553C9885ACF30A9ED0B88CCFFB1D0"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/multi_dabai_pro.launch",
+    "hash": "4A99B8089FD656714091332C0E4895118F15AFEFED001001B0224A28F63F9F9F"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/multi_dabai.launch",
+    "hash": "0B5553CCDCF7915322D3EB479DD52168F81D71FBDEBEF30FF375CAA71053BB48"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/multi_deeyea.launch",
+    "hash": "CB74F5C04F6CE75453E6E82074F1116444A7295D049E4683AD22562BC12468E4"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/multi_device.launch",
+    "hash": "C2F3FB5E8DE0B96F1B29BCC782B8CB14383BE131D0C756A04CD2C35DEFAFA64F"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/multi_gemini.launch",
+    "hash": "F1BAB1A99FADEFC8F51A05F1BE59E3AD0A9BAC5F7725BC5128FF793C6E7FF667"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/stereo_s_u3.launch",
+    "hash": "F14B9E36DB431481FCEA51015AAE8B8171755BA1BD2F8CD2E73E6056F2BE801D"
+  },
+  {
+    "path": "ros_astra_camera-main/launch/stereo_s.launch",
+    "hash": "3DFF924C8A25D5F05C27A8DCF2823DA6BA4FABA85576DD8040A486D6A244912F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.gitattributes",
+    "hash": "CE56810EC9CD4FE15EA612F4254946766F35A77F37753C0BA1A90855D68779D6"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.gitignore",
+    "hash": "379D5C3A4DBD3CB5DB8371D904DF17423921CF62AF049692413DDD9F1949DFCE"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.travis.yml",
+    "hash": "B222D0854743C43539DD6EF222C4FE3F4280B4359AF173ADDD9BEB2EB944050E"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/changelog.txt",
+    "hash": "B3FFD4C741D26B6A013C88F9EEBA6CBD34090ECCBC58500CFF486EEAABF05201"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/CMakeLists.txt",
+    "hash": "90F5EA2897B20C1C1212A37D2C2F97D4522B4F67B2AB9DA0E2CE782D107FFF06"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/doxygen.conf",
+    "hash": "093F3A6698BBF8E118CE438E4017E65A2AE4EF7806D69EA85CA7EFC146D7DD80"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/libuvc.pc.in",
+    "hash": "24FC53E6B05F66589B2E207CBADBE891F650BA09895751A6FA23AF62C6D081A2"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/libuvcConfig.cmake",
+    "hash": "1B9831CD271A0B7BC3C51F15C28229B6C50B83CA04A64D93E459DE00003441A3"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/LICENSE.txt",
+    "hash": "57A7BA48475CB7F0AADDFB79EF32E742A19901908F0287B6827DA336477B212E"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/README.md",
+    "hash": "5A4439B8480108BA6F2461D06F6D6B3AF8476A4DBE8A80CA8460E24CEE731124"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/standard-units.yaml",
+    "hash": "CB97E20756479E9DB58FD17F795476FA8D5647F4E601A922121D7E4200152BEE"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/config",
+    "hash": "323F14F20849CDA989A4DEF5F8769C76728404E6C1D648980A9D40059F1DF09F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/description",
+    "hash": "85AB6C163D43A17EA9CF7788308BCA1466F1B0A8D1CC92E26E9BF63DA4062AEE"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/HEAD",
+    "hash": "F6F2B945F6C411B02BA3DA9C7ACE88DCF71B6AF65BA2E0D89AA82900042B5A10"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/index",
+    "hash": "AA520E4E6D00477E26692019BACB5C9EE6FCF39B52EE8CB26EB8B1F123A3CB67"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/packed-refs",
+    "hash": "E25FF347E9162C29165387667C6913FCDFF081972C6231D7088ABC509003ACDC"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/applypatch-msg.sample",
+    "hash": "0223497A0B8B033AA58A3A521B8629869386CF7AB0E2F101963D328AA62193F7"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/commit-msg.sample",
+    "hash": "1F74D5E9292979B573EBD59741D46CB93FF391ACDD083D340B94370753D92437"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/fsmonitor-watchman.sample",
+    "hash": "9C34AB6527211EC8605B2A563F5329ED8F66DBFBD11E677C78DA6C3171085604"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/post-update.sample",
+    "hash": "81765AF2DAEF323061DCBC5E61FC16481CB74B3BAC9AD8A174B186523586F6C5"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/pre-applypatch.sample",
+    "hash": "E15C5B469EA3E0A695BEA6F2C82BCF8E62821074939DDD85B77E0007FF165475"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/pre-commit.sample",
+    "hash": "D6D114E507A3295FF3A2E214611C2F5C0D13EAF0ED53F595BA02E4CC714FCA18"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/pre-merge-commit.sample",
+    "hash": "D3825A70337940EBBD0A5C072984E13245920CDF8898BD225C8D27A6DFC9CB53"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/pre-push.sample",
+    "hash": "4B1119E1E13A212571976F4AEE77847CDBD40978546D6273A557E238981A40D1"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/pre-rebase.sample",
+    "hash": "4FEBCE867790052338076F4E66CC47EFB14879D18097D1D61C8261859EAAA7B3"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/pre-receive.sample",
+    "hash": "A4C3D2B9C7BB3FD8D1441C31BD4EE71A595D66B44FCF49DDB310252320169989"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/prepare-commit-msg.sample",
+    "hash": "E9DDCAA4189FDDD25ED97FC8C789ECA7B6CA16390B2392AE3276F0C8E1AA4619"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/hooks/update.sample",
+    "hash": "751C037320024EC2EE2757F3FFAE0B10AD2C946367684E7059D4DC97EAC7E431"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/info/exclude",
+    "hash": "6671FE83B7A07C8932EE89164D1F2793B2318058EB8B98DC5C06EE0A5A3B0EC1"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/logs/HEAD",
+    "hash": "F3ECAE86C583DBB6CFF9FBE145A164DF2ED7D6AA072D4B0FEFDB6FAD3FFC4332"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/logs/refs/heads/master",
+    "hash": "F3ECAE86C583DBB6CFF9FBE145A164DF2ED7D6AA072D4B0FEFDB6FAD3FFC4332"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/logs/refs/remotes/origin/HEAD",
+    "hash": "F3ECAE86C583DBB6CFF9FBE145A164DF2ED7D6AA072D4B0FEFDB6FAD3FFC4332"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/objects/pack/pack-d3269688f71c622bb1768defda3433d1e07c39d9.idx",
+    "hash": "50169E905CEE1B92B61A1918C090634F8D2A9135B71B5C79EA4E7E5CB183BCD4"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/objects/pack/pack-d3269688f71c622bb1768defda3433d1e07c39d9.pack",
+    "hash": "B89AA5B5BE127122AC83EE0878FD9657BED3EE2F5E160955B9B4241EB470FE83"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/refs/heads/master",
+    "hash": "73DE986913A71B78A65A0A699063772D0197F430FB0346AC25C0049F8C3728F2"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.git/refs/remotes/origin/HEAD",
+    "hash": "CDC65E67690C4C6475174E5EC662B70655246A2F3924354778835AB3BE70AA76"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/.github/workflows/web.yml",
+    "hash": "DE735528826A2B02A583454951DD16D19EE899F98FC210D2AB3D22F3F55B2F8C"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/cmake_install.cmake",
+    "hash": "8AEBE2FB688B0402D59F3E045A8FB205EB2C33E93D143C6DA87418667DA7E5CE"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeCache.txt",
+    "hash": "83FC32ECF3056DE9217CA8B5230A2F3C76BB76A290C76D1D72036A0FEE9E3559"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/example",
+    "hash": "DBA4D377958D53BA675331227751E2EE2E865CC7055CC61C8FD59EE9902857D2"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/install_manifest.txt",
+    "hash": "3C77C5FFA6873D5440C05468CCB03192A89ED2E6F1E115ED959086B548D4F8FA"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/libuvc.a",
+    "hash": "9D307ED191850DB9AE1BA3562AB1F697DA11834ED2D1001BB95F3D7AE669B1EF"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/libuvc.pc",
+    "hash": "F3D09313CE4A7EFA07A0763AF66123FB25F266805709876FE6FC6CCAFD36463D"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/libuvc.so",
+    "hash": "749A86B73C149456D7C8124A71C4D7EBDF4BBB4628DE5FA9D0C0C6F8FACCB07D"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/libuvc.so.0",
+    "hash": "749A86B73C149456D7C8124A71C4D7EBDF4BBB4628DE5FA9D0C0C6F8FACCB07D"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/libuvc.so.0.0.7",
+    "hash": "749A86B73C149456D7C8124A71C4D7EBDF4BBB4628DE5FA9D0C0C6F8FACCB07D"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/libuvcConfigVersion.cmake",
+    "hash": "F44374BF3E80BA530D2FF04E4A630F5C0098DD284BD6B46E5B770CF00A2FCF43"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/Makefile",
+    "hash": "B2742288C23D4E926EAA9F53F885494DF2CE893F6D44B62221C107563DEBE37D"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/cmake.check_cache",
+    "hash": "A26189E394421DA57F45706A07713C5720ACD200A41711B0C0C590C3C63371C4"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/CMakeDirectoryInformation.cmake",
+    "hash": "2B2CF70B2E5C30D35DBCBC142F20F99C1AE7224EE7ADFB8283CCA489773F403A"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/CMakeError.log",
+    "hash": "317DACE1C54E1CF5C2D304816AF83E90EAEB0B9EEBACB1670720C0F30942DD96"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/CMakeOutput.log",
+    "hash": "0E50301674C2A77DCFE74B4E9FA38934359A2C97E84A9519612ECE46CEABDEF6"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/Makefile.cmake",
+    "hash": "6B3466A844BEB0B3A1318AF11249CFAE2455C56EF58B1CA330985F5D12F2D77E"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/Makefile2",
+    "hash": "8643D15854DF3F29C5C9121D86F772B7DBEA35466E8B854FFC82F5E7821FC070"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/progress.marks",
+    "hash": "F14B4987904BCB5814E4459A057ED4D20F58A633152288A761214DCD28780B56"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/TargetDirectories.txt",
+    "hash": "1FD5DA9FF1EB12F5E42BEE31198CCBCBA4B30CB04DA0174E3637A8EC5F7DC40F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/3.16.3/CMakeCCompiler.cmake",
+    "hash": "A2644891A5733D7744393A6486B125B098ED0C81CD89D9BECF99BAAAA9952AE9"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin",
+    "hash": "A1519BBADE5E96CF65344A57A1A5C6EAE2F4141B7AA9BC497CA593CDA14E648B"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/3.16.3/CMakeSystem.cmake",
+    "hash": "A67C99B4128B79F9F12C6F18EB102869920882D782CE2602D84414720DA9BE62"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/3.16.3/CompilerIdC/a.out",
+    "hash": "70A926C15ABD0AD7D3AD9758058E3E80B47E42CE3963E5BEE244B42A275210B9"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c",
+    "hash": "D657494CC04D57AA0FC6CA88558B08F270BB597844D7DDA3C10ABE05BE7E1BDB"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/build.make",
+    "hash": "95707CFDE369613B268CE004372F6CCB487AFE4D32AC8593009AEE0525371EE8"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/C.includecache",
+    "hash": "14D8633C20ABAB625C290A0F54480E54E987FC98785D5AEF41C296B7B62C36C4"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/cmake_clean.cmake",
+    "hash": "9C77ACA81A06CC5C6A619DAA38B553EF39C64F4381B526890031B0C4670BE413"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/depend.internal",
+    "hash": "940468F77CA5CB3CD34556BEDCF328C5C5591A738240583994F5FB17384A498F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/depend.make",
+    "hash": "2C91E5EA351BB7A89631CB1250823FF4C8C8AF1E5F7932C22FD4061219A47074"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/DependInfo.cmake",
+    "hash": "2708AC29110F14B73D865EFF3CFBB43D4B57860DB28B6AA7186106340A7EDA2F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/flags.make",
+    "hash": "C12D4771D098FAE11F8B759400610FFF71ECC8778DC9B678AEFC1D5E894B2A38"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/link.txt",
+    "hash": "40E96DD7CA0B090670C0CB801091F3AD4F1ADBCEA0DAB6A6189C8D6E29E30143"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/progress.make",
+    "hash": "C06E644090B09D41EADDF59D10BCF03C6DB6499EB51FA0D03E5128E5A165CC3C"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/example.dir/src/example.c.o",
+    "hash": "BEA2DC0A4B77B1E9338292254AAF4D27BA70B8764438D21E20799CDC85986721"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/Export/lib/cmake/libuvc/libuvcTargets-release.cmake",
+    "hash": "A4C63951CCB310EE1C065E2160FF7BAEC26AC40295200E295683BA90384400ED"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/Export/lib/cmake/libuvc/libuvcTargets.cmake",
+    "hash": "070B6719BA0F7DEF30267433158E950A174C3CD712EF98128DBF18D06FB1F8D6"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/build.make",
+    "hash": "4009349D33D1D35A61DDF4910719DB0E47F108B331B8DB9289412FF1F81AC601"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/C.includecache",
+    "hash": "BF8CC73B8093F64FCC230E9153A38D24753AE7F8834EE18FC27A661E0CA91E62"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/cmake_clean.cmake",
+    "hash": "D8931C7498E420B1C43E71E4EAAC1E106585CD7E3E1A5F09FB2B2F34C043B06E"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/depend.internal",
+    "hash": "2703BC3BDBCD6E7E3F17BE9151FF9B25D4D73DE52B2CBCFAF647CC745101C430"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/depend.make",
+    "hash": "D4C2E003D564165A5172E034414C0E7B9B11231F7BA3988CC7D32FC423374F0D"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/DependInfo.cmake",
+    "hash": "DB38D07CB0C084D4D27F1AB98731D883175B1ABBB7B73A5C2D9B78CB51B3D3E9"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/flags.make",
+    "hash": "DF75D6E7C7CA002790B1D5ECBFAE683BBEBAFE10E2491257E35D14EDD5BEE23E"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/link.txt",
+    "hash": "37F399C42AA2B21A0535570463D170E4C14BD737FD14F284D0C51A56D810FD7F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/progress.make",
+    "hash": "86DB87C72ABA9F55D5420DB0C4E6864DADF131571A93438C4AC0C1C6B321444F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/src/ctrl-gen.c.o",
+    "hash": "08170754910F5F651D019063EA945C4CBE7588E7420E8FA0E89C2E712A5E7FE0"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/src/ctrl.c.o",
+    "hash": "396A5C2045053D6A422ECD4CC79297960671D7291352FAE430F8655F6C24DD7B"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/src/device.c.o",
+    "hash": "70D0BDCA05B51CF4155851D69414C3F6EB324DE7124E01E59066DEEACA87F193"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/src/diag.c.o",
+    "hash": "25BD39BCC90BA9D38383CB1ECAE068E45AC681B2B37259E212184EDD80050844"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/src/frame-mjpeg.c.o",
+    "hash": "02A8E2D4E6146DD0DF5D5BDE1F8D52E02ACABA1B15A76E6E7EB62158C2C0F59B"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/src/frame.c.o",
+    "hash": "A6669EB3E662A5100E0B60FB768106E72159DE1FEFA2E1736D8356F9534E440A"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/src/init.c.o",
+    "hash": "BE492EE92E413C18A39943F16A888010C491B219C465AD0D8A5897E217163224"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/src/misc.c.o",
+    "hash": "032FA2461489A6B9361578F750B11E671924B10D7C26C6B71AA74C6C4874CE04"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc.dir/src/stream.c.o",
+    "hash": "F0B89F73BA1A3FFDC863F9164BE583B576F5AE81290DB143A4EF2896C5ABBDC7"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/build.make",
+    "hash": "EB7B46D8ADD1BE9CD459F4A1DC898D2D1F2F49FE85799AAD50499C22CE5E9A1A"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/C.includecache",
+    "hash": "BF8CC73B8093F64FCC230E9153A38D24753AE7F8834EE18FC27A661E0CA91E62"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/cmake_clean_target.cmake",
+    "hash": "8EEF0659621A47D542FF2ADCD3EB90390E37AFF6B88F2E9B3A0401A4EF950D12"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/cmake_clean.cmake",
+    "hash": "0D7363A70ACAC68C358A5B8AA89F3473E231F7D2E4CA9C05A1AEFAD547F2BC4E"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/depend.internal",
+    "hash": "F526381776BB6EB3709B7E757B3BADB4556C003D4B2A0F424A0D2DD8E627055F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/depend.make",
+    "hash": "3D599E485BE2C15E63E440C83317D19E3D02C6412A146B1ADB05961E635D3ADD"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/DependInfo.cmake",
+    "hash": "D95B8032155CFDF80D2585CCE987DF58592597E2150149431FE6DDA295ABF7CE"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/flags.make",
+    "hash": "73EECD3E8767409F88149E49FE1AAA9D3E754BECD9C7E4160F46A3DDF7C62F40"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/link.txt",
+    "hash": "DC2BDEA263F795269F53261885F8721C1D90C5A2209BE486938E9DD5C0C56F4C"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/progress.make",
+    "hash": "33CBECCDA9E7FB59FB2DDBA7F7FF3B7F206EBE1BA90507ED9285235A2929D2F2"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/src/ctrl-gen.c.o",
+    "hash": "08170754910F5F651D019063EA945C4CBE7588E7420E8FA0E89C2E712A5E7FE0"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/src/ctrl.c.o",
+    "hash": "396A5C2045053D6A422ECD4CC79297960671D7291352FAE430F8655F6C24DD7B"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/src/device.c.o",
+    "hash": "E711205C3FE98EAA7DA7057B3EC30F59CD0EBE87DD8BE5201BAD63DBD6AE8578"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/src/diag.c.o",
+    "hash": "3405974C57165B3DAB9582863121B9B7655BCB8C6D09496DAFC54C7699B91CB3"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/src/frame-mjpeg.c.o",
+    "hash": "02A8E2D4E6146DD0DF5D5BDE1F8D52E02ACABA1B15A76E6E7EB62158C2C0F59B"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/src/frame.c.o",
+    "hash": "689AFC7ABAFAFA781EB41DD5CEFDEC04CD79FD82598F0887A848ABA733EBBF2D"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/src/init.c.o",
+    "hash": "26AE61091C033906586D1BD282BDDE72767AA02B5EE3BCA93EAB3F089AB4F60C"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/src/misc.c.o",
+    "hash": "032FA2461489A6B9361578F750B11E671924B10D7C26C6B71AA74C6C4874CE04"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/CMakeFiles/uvc_static.dir/src/stream.c.o",
+    "hash": "C8BBB491FC29E5BD4D1A01AA3DE90BEA17B4A73F22EA7ECAE1AFBD2E2E84CF6A"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/build/include/libuvc/libuvc_config.h",
+    "hash": "23A77ED238FF38D33FE2556AAC7A81E48028FECF844A34B287BB9F1E39738377"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cameras/isight_imac.txt",
+    "hash": "81CE8F9D46CAB77F5B3FB68FB6430D1D6EBCF91B0F3733295D64820BD41AA110"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cameras/isight_macbook.txt",
+    "hash": "0CCDE9AE5D59AED2BE6A1B87E3503093A27AB7A9133D6604FC4611079914398F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cameras/logitech_hd_pro_920.txt",
+    "hash": "96959D269100B25672380F94522D4817284CA8549C1203BD182F3B3E65472CBF"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cameras/ms_lifecam_show.txt",
+    "hash": "6D6D8067A4509BE5608E1BBCBA2F16DED00C82A20DCB88E7E4E0FA3CD061FB4B"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cameras/quickcampro9000_builtin_ctrls.txt",
+    "hash": "4F8992B158F7BD6667F1E162A274CC62E22FC6DCF98D792F47D9B9F8DC4C928B"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cameras/quickcampro9000_extra_ctrls.txt",
+    "hash": "48DB2659FC2406D53BCFDEF90F146A5BF53FF0CA209A51798E75FD4C68F50137"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cameras/quickcampro9000.txt",
+    "hash": "CA3F48CB5812A9D400F32A1C2B026FC9DD77E8FD49EF068A451FA4145245D8CD"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cmake/FindJpegPkg.cmake",
+    "hash": "23671B4A0497857AE98462DD67AF55D873C121150A3C31C448326A752B06EB70"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cmake/FindLibUSB.cmake",
+    "hash": "0D231AB9976FB54DDFB0EFF1BBDBA67AF7E3470A7FCC90DDD52FC939E0AB4D66"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/cmake/FindOpenCVPkg.cmake",
+    "hash": "F6632DFF28A4856B164F6DB9F9908270BB613711D2FBD80AD6E9F0282D3BBA92"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/include/utlist.h",
+    "hash": "C7A9D29F5C988D2FAAA08523DF9D4B6A5C71A3DC278B1B1FE2E54B3E8232B403"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/include/libuvc/libuvc_config.h.in",
+    "hash": "D42C3B6FC6DA5F813EA889DC4A8EABE85EDF7D84680D5C6E79EF1E863E1E713C"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/include/libuvc/libuvc_internal.h",
+    "hash": "FB9D715293C4CA85A62BD0533DA36F68C5E2E33EE42C039AAAEFB4F2A55D2B7D"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/include/libuvc/libuvc.h",
+    "hash": "23BA529637F503D1EFBDE53280ABD0F2512D7C333944AE933111653E6217846F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/ctrl-gen.c",
+    "hash": "B61BE787ACCB87065AB16BDAEE5B0326F87972751EBAB7B3E4A3A2374B4A79FC"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/ctrl-gen.py",
+    "hash": "68BB215D74DEF873DBD6921FEF85B60C7B596EB544E23B76F7D17EEE6B7F5F43"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/ctrl.c",
+    "hash": "D21FB90D2B953D7F9505C234BBD2A08B0EAE6EA5741B76433BFCA12A0FCB25F1"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/device.c",
+    "hash": "2923F6F4AECACE4743BA70C2E0A49805F78126AA61993E35BAA53F83D053252F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/diag.c",
+    "hash": "D50E79317D1E4FE65EC397357A156D90E266BE28377C318B48B6A97360C6E76F"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/example.c",
+    "hash": "8C9163F948D21FF46A22A95FE0FA9D9F777216C95FF00535A8FE24797C09DD35"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/frame-mjpeg.c",
+    "hash": "191CC2C222C6B4D358A5A5CA073EBDD87A4B2C5542337A675A26F12B7D5E7141"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/frame.c",
+    "hash": "E9340CF694CAF67EC842B468E14063D626044CFC9B12F62653905EEF348F7DF5"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/init.c",
+    "hash": "A4D085D05A1B6C3350EE8CA199E27C852CAEE982679A629BD5C90A65B6C06631"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/misc.c",
+    "hash": "2BB49EA467AF99A2C737EBBCCBF6C3A1C13A52D308C338A320599514B6F9727E"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/stream.c",
+    "hash": "A90B0EFE1FC07FCCA8F39D2961F119A92C07D97C025763612B23B249BB0D040E"
+  },
+  {
+    "path": "ros_astra_camera-main/libuvc/src/test.c",
+    "hash": "E238BC36259E578183EA4518D262351C31DC15B689161C889E19EC68EA958D89"
+  },
+  {
+    "path": "ros_astra_camera-main/msg/DeviceInfo.msg",
+    "hash": "83DA3B7AC4C0CAFDD12447FFA925169F3F3B847CDAF13E864298AAE4498C8390"
+  },
+  {
+    "path": "ros_astra_camera-main/msg/Extrinsics.msg",
+    "hash": "85E08B5DBE973CEAFE3E7303BD4F12C4ADDAC8C8231340A676F27E7534B147E9"
+  },
+  {
+    "path": "ros_astra_camera-main/msg/Metadata.msg",
+    "hash": "8FD83CEB9BFF302C8953D480C67AAF27A9B2810467A900B5BE001568FB8516A7"
+  },
+  {
+    "path": "ros_astra_camera-main/scripts/create_udev_rules",
+    "hash": "99C793E4B77FE07F19E80646E4F8F144069E382D1FD1436B40F9FCB6F19323F1"
+  },
+  {
+    "path": "ros_astra_camera-main/scripts/depth_to_color.py",
+    "hash": "7E2819569C6EC4F4BF3E4B2868B3F955120BA498F314247E59C4966041217CF5"
+  },
+  {
+    "path": "ros_astra_camera-main/scripts/get_point_cloud_dist.py",
+    "hash": "20B26DECDD0FED32979595767EBE31DDC968C4C1E0941FD5BB20E26D99F1AEC5"
+  },
+  {
+    "path": "ros_astra_camera-main/scripts/get_supported_video_modes.py",
+    "hash": "0AA24D296760D275F8EB9D5D65C0309DC81C00A70BC8EFD52ECBA159B52D240E"
+  },
+  {
+    "path": "ros_astra_camera-main/scripts/sync.py",
+    "hash": "5636F2225DB6AB047A980627DAE318201A05E451250C8FCC8AB9712D176B41D2"
+  },
+  {
+    "path": "ros_astra_camera-main/scripts/test_open_close_stream.py",
+    "hash": "A1E18684796FCF78633B5F3E2563AF215723CB5C823778AF28FB30818B134D47"
+  },
+  {
+    "path": "ros_astra_camera-main/src/d2c_viewer.cpp",
+    "hash": "CEC9D5B76DFEAC89EEFABEB5DC296851B9E2A693B1590157679B594B46267C96"
+  },
+  {
+    "path": "ros_astra_camera-main/src/list_devices_node.cpp",
+    "hash": "4E92D632CE4F815FA0320DBE8C228A28C18E9F93EC6EFFA60CFBF9ACB99256C0"
+  },
+  {
+    "path": "ros_astra_camera-main/src/main.cpp",
+    "hash": "472058B2E329BBE612207A9F3B66B52B9BD85422BEE06D415C60E86F474C5C53"
+  },
+  {
+    "path": "ros_astra_camera-main/src/ob_camera_info.cpp",
+    "hash": "76B28CD800B98B1FDC67C623D196C12C5399D221DEB71E28177429263047B800"
+  },
+  {
+    "path": "ros_astra_camera-main/src/ob_camera_node_factory.cpp",
+    "hash": "0B63A2CC2800759983E99F7540BA0CC17CD795C23914FC9F851DD3B513C43F71"
+  },
+  {
+    "path": "ros_astra_camera-main/src/ob_camera_node.cpp",
+    "hash": "DDC8CCFD5324E2FAA87E8B5F6338ADE0213B2B326CE95D25DCB92CB9EF77B745"
+  },
+  {
+    "path": "ros_astra_camera-main/src/ob_context.cpp",
+    "hash": "814E6E834733374E713241D616787CE5E3326DAB57E1404D3CB02AA2E0DE390F"
+  },
+  {
+    "path": "ros_astra_camera-main/src/ros_service.cpp",
+    "hash": "A8EB879A331686A2FE3E84A9C20DB31FF7292ECA519FF07E80DC3A433DE52B0E"
+  },
+  {
+    "path": "ros_astra_camera-main/src/utils.cpp",
+    "hash": "50C1349D59B8780BF4BB27DA0F565674FC42F3868A1E1C9F02C6E26CA3783E98"
+  },
+  {
+    "path": "ros_astra_camera-main/src/uvc_camera_driver.cpp",
+    "hash": "0CBB28DF115A7807B6C7B3A54C823B114141DB3C72EF1B6C1F41FBE72B802878"
+  },
+  {
+    "path": "ros_astra_camera-main/src/point_cloud_proc/point_cloud_xyz.cpp",
+    "hash": "B6A36AD6DC7BACD72DB30439B6D3DA59B8CDACC12198605F1A8F9C22FA73C954"
+  },
+  {
+    "path": "ros_astra_camera-main/src/point_cloud_proc/point_cloud_xyzrgb.cpp",
+    "hash": "614559AB5D649F9BD9E0733F5DAEB78EE64ADC92FD7E90AB08C3959BE5A631D7"
+  },
+  {
+    "path": "ros_astra_camera-main/srv/GetBool.srv",
+    "hash": "AB40D9593B3432B3FDB86353F8C4FC9F7070254746CA0C346C71F20FB41BC9AB"
+  },
+  {
+    "path": "ros_astra_camera-main/srv/GetCameraInfo.srv",
+    "hash": "B2E3BF90CB5C58C8979257E80AF54C9BB6F0AE68E90C47477968B4B209C65044"
+  },
+  {
+    "path": "ros_astra_camera-main/srv/GetCameraParams.srv",
+    "hash": "573EB194FC2B1F1445D37380B5FB680F746EB6AB7BFE7A4A908824BAB09D3E3B"
+  },
+  {
+    "path": "ros_astra_camera-main/srv/GetDeviceInfo.srv",
+    "hash": "1F1FD680E6ACFA2BD003A959452D599C663556CFA47721116D99D95D646F6477"
+  },
+  {
+    "path": "ros_astra_camera-main/srv/GetDouble.srv",
+    "hash": "188319380BFB168D6CF3834BCA2CDF162B0381486960BA79F7197FE920A76AF8"
+  },
+  {
+    "path": "ros_astra_camera-main/srv/GetInt32.srv",
+    "hash": "1D18699608BC649EAB26038F0197B8CCB25EAD309B38A3481A68EDD15D68794E"
+  },
+  {
+    "path": "ros_astra_camera-main/srv/GetString.srv",
+    "hash": "1FB27429CA32BA3615FA3170D807C4C2D23C993A61A55C263DBB24D217FC92F4"
+  },
+  {
+    "path": "ros_astra_camera-main/srv/SetInt32.srv",
+    "hash": "58999C811F2CE4FF4BEB6F37D1017F9ABEA492527EA765D2C501A50247B52228"
+  },
+  {
+    "path": "ros_astra_camera-main/srv/SetString.srv",
+    "hash": "1137DE16260D638622E16C4E11C7BD811DCDD92D2A5AE2F3061B941295397ACC"
+  },
+  {
+    "path": "ros_astra_camera-main/test/.gitkeep",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "usb_cam/.gitignore",
+    "hash": "6BCCB686B36FFC1C40E2BFA9DC411A8EE5F71A777C49A938258DB64EAC085A62"
+  },
+  {
+    "path": "usb_cam/.travis.yml",
+    "hash": "B1962C82C01DA70657C52E9066D8CB8324C8A43C4CEB5F8FD5EC1262945FF6D8"
+  },
+  {
+    "path": "usb_cam/AUTHORS.md",
+    "hash": "992EC1274DED7C02A1EB72351663387A3AD11A768918A3FF94D0BB95A83F4661"
+  },
+  {
+    "path": "usb_cam/CHANGELOG.rst",
+    "hash": "1EC793406F9147D44B4C8E7193FAE5A1149D0A17828779511B79C3D1BD630082"
+  },
+  {
+    "path": "usb_cam/CMakeLists.txt",
+    "hash": "69828C54826432EE3A35AB4FD06EBF3C17F6DCE0D1ADB46FCD5F4BF854DCA1BB"
+  },
+  {
+    "path": "usb_cam/LICENSE",
+    "hash": "E933A42761433025973EDEDD034740096FA523F0019049B2C55678E0DFAD5FFD"
+  },
+  {
+    "path": "usb_cam/mainpage.dox",
+    "hash": "191DE3CB0E71381447A57F176889B31AB54D779F3884D0D8754724F3A8E939FC"
+  },
+  {
+    "path": "usb_cam/package.xml",
+    "hash": "C1E0EAC96E355AAE48231D30A90023DC8E3668DF5F16E12F3C2121F4D8A37E43"
+  },
+  {
+    "path": "usb_cam/README.md",
+    "hash": "88F808880275A140ABF85B77298F2E488240E9D367E298B6B99B0A5CEBAD729B"
+  },
+  {
+    "path": "usb_cam/.git/config",
+    "hash": "CC27F438E338821C366A6E7ACDA2EB987116E0839544DA60CAA96E79C4B6BCCB"
+  },
+  {
+    "path": "usb_cam/.git/description",
+    "hash": "85AB6C163D43A17EA9CF7788308BCA1466F1B0A8D1CC92E26E9BF63DA4062AEE"
+  },
+  {
+    "path": "usb_cam/.git/HEAD",
+    "hash": "8DD7E69CF77BFF3E6717335270C85D60F7AEE7F9E917566D94E0AFD8C9D31317"
+  },
+  {
+    "path": "usb_cam/.git/index",
+    "hash": "73C28345C7B6F5B40CDDBBD36722B6CCD29DA16AF8019465A2E919B987CFFC8B"
+  },
+  {
+    "path": "usb_cam/.git/packed-refs",
+    "hash": "84776C6154D92BDF33DCC4D4DF780581D3C61732402B4634D166B88D827B5DBA"
+  },
+  {
+    "path": "usb_cam/.git/hooks/applypatch-msg.sample",
+    "hash": "0223497A0B8B033AA58A3A521B8629869386CF7AB0E2F101963D328AA62193F7"
+  },
+  {
+    "path": "usb_cam/.git/hooks/commit-msg.sample",
+    "hash": "1F74D5E9292979B573EBD59741D46CB93FF391ACDD083D340B94370753D92437"
+  },
+  {
+    "path": "usb_cam/.git/hooks/fsmonitor-watchman.sample",
+    "hash": "7F9CACF1F7C8F791ABFAA76171B951A55A9A2A11F1390B43CBC83995B4A91B33"
+  },
+  {
+    "path": "usb_cam/.git/hooks/post-update.sample",
+    "hash": "81765AF2DAEF323061DCBC5E61FC16481CB74B3BAC9AD8A174B186523586F6C5"
+  },
+  {
+    "path": "usb_cam/.git/hooks/pre-applypatch.sample",
+    "hash": "E15C5B469EA3E0A695BEA6F2C82BCF8E62821074939DDD85B77E0007FF165475"
+  },
+  {
+    "path": "usb_cam/.git/hooks/pre-commit.sample",
+    "hash": "12C723235131F1C5576C652AC2A0A007F261A93C0DDC445B1DCEE6CD98E30788"
+  },
+  {
+    "path": "usb_cam/.git/hooks/pre-push.sample",
+    "hash": "4B1119E1E13A212571976F4AEE77847CDBD40978546D6273A557E238981A40D1"
+  },
+  {
+    "path": "usb_cam/.git/hooks/pre-rebase.sample",
+    "hash": "4FEBCE867790052338076F4E66CC47EFB14879D18097D1D61C8261859EAAA7B3"
+  },
+  {
+    "path": "usb_cam/.git/hooks/pre-receive.sample",
+    "hash": "A4C3D2B9C7BB3FD8D1441C31BD4EE71A595D66B44FCF49DDB310252320169989"
+  },
+  {
+    "path": "usb_cam/.git/hooks/prepare-commit-msg.sample",
+    "hash": "E9DDCAA4189FDDD25ED97FC8C789ECA7B6CA16390B2392AE3276F0C8E1AA4619"
+  },
+  {
+    "path": "usb_cam/.git/hooks/update.sample",
+    "hash": "751C037320024EC2EE2757F3FFAE0B10AD2C946367684E7059D4DC97EAC7E431"
+  },
+  {
+    "path": "usb_cam/.git/info/exclude",
+    "hash": "6671FE83B7A07C8932EE89164D1F2793B2318058EB8B98DC5C06EE0A5A3B0EC1"
+  },
+  {
+    "path": "usb_cam/.git/logs/HEAD",
+    "hash": "FA72D2958F00FAAB1AF7392F0118F179807D4D132F8F1024EA9E53985A93738F"
+  },
+  {
+    "path": "usb_cam/.git/logs/refs/heads/develop",
+    "hash": "FA72D2958F00FAAB1AF7392F0118F179807D4D132F8F1024EA9E53985A93738F"
+  },
+  {
+    "path": "usb_cam/.git/logs/refs/remotes/origin/HEAD",
+    "hash": "FA72D2958F00FAAB1AF7392F0118F179807D4D132F8F1024EA9E53985A93738F"
+  },
+  {
+    "path": "usb_cam/.git/objects/pack/pack-1001bdec3a9022d959957d7a471f71f62fab68bf.idx",
+    "hash": "1839E8E3AD301F26A25FF2CC84B28BC6ECFEA00B0F0CE2EDF61BF16314BB1140"
+  },
+  {
+    "path": "usb_cam/.git/objects/pack/pack-1001bdec3a9022d959957d7a471f71f62fab68bf.pack",
+    "hash": "9978A09C8ACCB7B05769ED1E7E34504EDDC4CB7435FF3EA4211FABAC0D48C7E7"
+  },
+  {
+    "path": "usb_cam/.git/refs/heads/develop",
+    "hash": "3D1E549AD6A90C7AF7DF2A01CC416FF89378AD700C74A0DBEDA8DA3FFECFB9E7"
+  },
+  {
+    "path": "usb_cam/.git/refs/remotes/origin/HEAD",
+    "hash": "BDA5CFBD39E60865D1109488BDC0EF20A99B0A24A91E9A932948D1BD5F9F2E41"
+  },
+  {
+    "path": "usb_cam/include/usb_cam/usb_cam.h",
+    "hash": "61EE8A48650D33AB148A3ABCF1B7814448F4655A1C5FD66322B66888BF4443B2"
+  },
+  {
+    "path": "usb_cam/launch/usb_cam-test.launch",
+    "hash": "31024935C465BC77C149E89CC34E50B6BF58AA017CAB73872C5CAAA7D06412DC"
+  },
+  {
+    "path": "usb_cam/nodes/usb_cam_node.cpp",
+    "hash": "E1803316D5B9F366EE7A7B28B6DA9E7470E0F98E1AA27F40D330AC0CFB675D32"
+  },
+  {
+    "path": "usb_cam/scripts/app_read.py",
+    "hash": "0431743393303183375E880FAD0DB652D11E42B49729CD1F5CB375214C4701ED"
+  },
+  {
+    "path": "usb_cam/scripts/beedog.jpg",
+    "hash": "A6DDCE77CC39EF6CF8B874BD9EAFB7ED457E007D95B3EDAB5C8373DE1F440EB9"
+  },
+  {
+    "path": "usb_cam/scripts/image_read.py",
+    "hash": "3C0636227A344E0677213909E24A488CA1B9FEB3796800E5366CAAC47F4B16FB"
+  },
+  {
+    "path": "usb_cam/src/LICENSE",
+    "hash": "D3AC21131BC4BD5F5A369BF3824D29A80626386B6AF6CB1DB4ABA9BDB8BB72D0"
+  },
+  {
+    "path": "usb_cam/src/usb_cam.cpp",
+    "hash": "818C99C0ECB5E958F296108D29518C329D71EBB652E04689206BD366DD189B9E"
+  }
+]

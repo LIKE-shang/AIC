@@ -1,0 +1,28 @@
+<launch>
+  <!-- Image-only preview; defaults to reusing the already-running USB driver. -->
+  <arg name="preview_executable" default="circle_pixel_preview_node.py"/>
+  <arg name="start_camera" default="false"/>
+  <arg name="video_device" default=""/>
+  <arg name="image_topic" default="/usb_cam/image_raw"/>
+  <arg name="offset_x_px" default="53.25"/>
+  <arg name="offset_y_px" default="15.484375"/>
+  <arg name="inner_radius_ratio" default="1.0"/>
+  <include if="$(arg start_camera)" file="$(find full_chain_vision_20261025_v6_1)/launch/circle_usb_camera.launch">
+    <arg name="video_device" value="$(arg video_device)"/>
+    <arg name="image_width" value="640"/>
+    <arg name="image_height" value="360"/>
+    <arg name="framerate" value="20"/>
+    <arg name="pixel_format" value="mjpeg"/>
+    <arg name="image_topic" value="$(arg image_topic)"/>
+    <arg name="required" value="true"/>
+  </include>
+  <node pkg="full_chain_vision_20261025_v6_1" type="$(arg preview_executable)" name="circle_pixel_preview" output="screen" required="true">
+    <rosparam command="load" file="$(find full_chain_vision_20261025_v6_1)/config/air_hover_pixel_debug.yaml"/>
+    <param name="image_topic" value="$(arg image_topic)"/>
+    <param name="pixel_preview/offset_x_px" value="$(arg offset_x_px)" type="double"/>
+    <param name="pixel_preview/offset_y_px" value="$(arg offset_y_px)" type="double"/>
+    <param name="pixel_preview/inner_radius_ratio" value="$(arg inner_radius_ratio)" type="double"/>
+    <env name="OPENBLAS_NUM_THREADS" value="1"/>
+    <env name="OMP_NUM_THREADS" value="1"/>
+  </node>
+</launch>

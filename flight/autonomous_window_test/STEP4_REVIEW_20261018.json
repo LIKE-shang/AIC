@@ -1,0 +1,467 @@
+{
+  "stage": "parameters_applied_pending_behavior_verification",
+  "parameter_writes_performed": true,
+  "flight_performed": false,
+  "source_readback": "../_diagnostics/step4_fcu_readback_20261018.json",
+  "source_battery": "../_diagnostics/step4_battery_readback_20261018.json",
+  "reported_firmware": {
+    "flight_sw_version": 17629952,
+    "decoded_version": "1.13.3",
+    "type_byte": 0,
+    "flight_custom_version": "c9a09ef76a000000",
+    "exact_custom_build_source_match_verified": false
+  },
+  "historical_evidence": "../window_pass_test/docs/HOLD_FIELD_RESULT_20261011.md",
+  "ground_height_user_confirmed_m": 0.245,
+  "observed_parameters": {
+    "COM_OF_LOSS_T": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 1
+      }
+    },
+    "COM_OBL_RC_ACT": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0
+      }
+    },
+    "COM_OBL_ACT": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0
+      }
+    },
+    "NAV_RCL_ACT": {
+      "success": true,
+      "value": {
+        "integer": 2,
+        "real": 0
+      }
+    },
+    "COM_RC_LOSS_T": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0.5
+      }
+    },
+    "COM_RCL_EXCEPT": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0
+      }
+    },
+    "COM_RC_OVERRIDE": {
+      "success": true,
+      "value": {
+        "integer": 3,
+        "real": 0
+      }
+    },
+    "COM_RC_STICK_OV": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 30
+      }
+    },
+    "RC_MAP_KILL_SW": {
+      "success": true,
+      "value": {
+        "integer": 6,
+        "real": 0
+      }
+    },
+    "RC_KILLSWITCH_TH": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0.75
+      }
+    },
+    "RC6_MIN": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 1000
+      }
+    },
+    "RC6_MAX": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 2000
+      }
+    },
+    "RC6_TRIM": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 1500
+      }
+    },
+    "RC6_REV": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 1
+      }
+    },
+    "RC_MAP_OFFB_SW": {
+      "success": true,
+      "value": {
+        "integer": 7,
+        "real": 0
+      }
+    },
+    "RC_MAP_FLTMODE": {
+      "success": true,
+      "value": {
+        "integer": 5,
+        "real": 0
+      }
+    },
+    "COM_FLTMODE1": {
+      "success": true,
+      "value": {
+        "integer": 2,
+        "real": 0
+      }
+    },
+    "COM_FLTMODE2": {
+      "success": true,
+      "value": {
+        "integer": -1,
+        "real": 0
+      }
+    },
+    "COM_FLTMODE3": {
+      "success": true,
+      "value": {
+        "integer": -1,
+        "real": 0
+      }
+    },
+    "COM_FLTMODE4": {
+      "success": true,
+      "value": {
+        "integer": 11,
+        "real": 0
+      }
+    },
+    "COM_FLTMODE5": {
+      "success": true,
+      "value": {
+        "integer": -1,
+        "real": 0
+      }
+    },
+    "COM_FLTMODE6": {
+      "success": true,
+      "value": {
+        "integer": 1,
+        "real": 0
+      }
+    },
+    "EKF2_HGT_MODE": {
+      "success": true,
+      "value": {
+        "integer": 3,
+        "real": 0
+      }
+    },
+    "EKF2_AID_MASK": {
+      "success": true,
+      "value": {
+        "integer": 24,
+        "real": 0
+      }
+    },
+    "EKF2_EV_POS_X": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0
+      }
+    },
+    "EKF2_EV_POS_Y": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0
+      }
+    },
+    "EKF2_EV_POS_Z": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0
+      }
+    },
+    "EKF2_IMU_POS_X": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0
+      }
+    },
+    "EKF2_IMU_POS_Y": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0
+      }
+    },
+    "EKF2_IMU_POS_Z": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0
+      }
+    },
+    "EKF2_EV_DELAY": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 175
+      }
+    },
+    "MPC_LAND_SPEED": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 0.699999988079071
+      }
+    },
+    "MPC_TKO_SPEED": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 1.5
+      }
+    },
+    "COM_DISARM_LAND": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 2
+      }
+    },
+    "COM_DISARM_PRFLT": {
+      "success": true,
+      "value": {
+        "integer": 0,
+        "real": 10
+      }
+    },
+    "BAT_N_CELLS": {
+      "success": true,
+      "value": {
+        "integer": 3,
+        "real": 0
+      }
+    }
+  },
+  "battery_observation": {
+    "BAT1_N_CELLS": {
+      "success": true,
+      "integer": 4,
+      "real": 0
+    },
+    "BAT_N_CELLS": {
+      "success": true,
+      "integer": 3,
+      "real": 0
+    },
+    "BAT1_SOURCE": {
+      "success": true,
+      "integer": 0,
+      "real": 0
+    },
+    "BAT1_V_DIV": {
+      "success": true,
+      "integer": 0,
+      "real": 18.100000381469727
+    },
+    "BAT_LOW_THR": {
+      "success": true,
+      "integer": 0,
+      "real": 0.15000000596046448
+    },
+    "BAT_CRIT_THR": {
+      "success": true,
+      "integer": 0,
+      "real": 0.07000000029802322
+    },
+    "BAT_EMERGEN_THR": {
+      "success": true,
+      "integer": 0,
+      "real": 0.05000000074505806
+    },
+    "COM_LOW_BAT_ACT": {
+      "success": true,
+      "integer": 0,
+      "real": 0
+    },
+    "battery": {
+      "voltage": 16.384000778198242,
+      "current": -0.7699999809265137,
+      "percentage": 1,
+      "cell_voltage": [
+        16.384000778198242
+      ],
+      "present": true
+    }
+  },
+  "proposed_changes": [
+    {
+      "parameter": "COM_OBL_RC_ACT",
+      "observed": 0,
+      "proposed": 4,
+      "reason": "Offboard loss with RC: Position -> Land per upstream v1.13.3 definition"
+    },
+    {
+      "parameter": "NAV_RCL_ACT",
+      "observed": 2,
+      "proposed": 3,
+      "reason": "RC loss: Return -> Land per upstream v1.13.3 definition"
+    },
+    {
+      "parameter": "COM_LOW_BAT_ACT",
+      "observed": 0,
+      "proposed": 2,
+      "reason": "Critical battery: Warning -> Land per upstream v1.13.3 definition"
+    },
+    {
+      "parameter": "MPC_LAND_SPEED",
+      "observed": 0.699999988079071,
+      "proposed": 0.3,
+      "reason": "Initial test landing speed candidate, requires actual touchdown validation"
+    }
+  ],
+  "acceptance_flags_changed": false,
+  "still_required": [
+    "physical_flight_boundaries_and_landing_sites",
+    "body_reference_and_rgbd_accuracy",
+    "dynamic_error_and_stopping_budget",
+    "FCU_failsafe_behavior_verification",
+    "PX4_simulation_and_independent_auto_takeoff_land_test"
+  ],
+  "applied_result": {
+    "authorization": "User approved the four proposed changes in chat",
+    "initial_state": {
+      "armed": false,
+      "mode": "MANUAL",
+      "system_status": 3,
+      "landed_state": 1
+    },
+    "boot_id": "8ce02c9b-cb7b-4d3d-830f-8893cd8874c5",
+    "before": {
+      "COM_OBL_RC_ACT": {
+        "integer": 0,
+        "real": 0
+      },
+      "NAV_RCL_ACT": {
+        "integer": 2,
+        "real": 0
+      },
+      "COM_LOW_BAT_ACT": {
+        "integer": 0,
+        "real": 0
+      },
+      "MPC_LAND_SPEED": {
+        "integer": 0,
+        "real": 0.699999988079071
+      }
+    },
+    "changes": [
+      [
+        "COM_OBL_RC_ACT",
+        "integer",
+        0,
+        4
+      ],
+      [
+        "NAV_RCL_ACT",
+        "integer",
+        2,
+        3
+      ],
+      [
+        "COM_LOW_BAT_ACT",
+        "integer",
+        0,
+        2
+      ],
+      [
+        "MPC_LAND_SPEED",
+        "real",
+        0.7,
+        0.3
+      ]
+    ],
+    "applied": [
+      {
+        "name": "COM_OBL_RC_ACT",
+        "readback": {
+          "integer": 4,
+          "real": 0
+        }
+      },
+      {
+        "name": "NAV_RCL_ACT",
+        "readback": {
+          "integer": 3,
+          "real": 0
+        }
+      },
+      {
+        "name": "COM_LOW_BAT_ACT",
+        "readback": {
+          "integer": 2,
+          "real": 0
+        }
+      },
+      {
+        "name": "MPC_LAND_SPEED",
+        "readback": {
+          "integer": 0,
+          "real": 0.30000001192092896
+        }
+      }
+    ],
+    "status": "APPLIED_AND_READ_BACK",
+    "flight_commands_sent": false,
+    "behavior_verified": false,
+    "after": {
+      "COM_OBL_RC_ACT": {
+        "integer": 4,
+        "real": 0
+      },
+      "NAV_RCL_ACT": {
+        "integer": 3,
+        "real": 0
+      },
+      "COM_LOW_BAT_ACT": {
+        "integer": 2,
+        "real": 0
+      },
+      "MPC_LAND_SPEED": {
+        "integer": 0,
+        "real": 0.30000001192092896
+      }
+    },
+    "final_state": {
+      "armed": false,
+      "mode": "MANUAL",
+      "system_status": 3,
+      "landed_state": 1
+    }
+  },
+  "nano_backup": "/home/abot/window_failsafe_change_20261018_bdf2786e/report.json"
+}

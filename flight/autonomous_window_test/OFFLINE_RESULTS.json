@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "kind": "synthetic_feedback_and_fake_ROS_services",
+  "real_flight": false,
+  "SITL": false,
+  "real_auto_takeoff_land": false,
+  "real_window_pass": false,
+  "sources": {
+    "session_window.py": "548e5bbc3fbd3c94e67c669bb1b7666001b1530b3d83a949d76f5b1eb657cf68",
+    "session_localization.py": "7e7e915061154929fd9afb3750639b147caf1e93b0d7876abc36ad61332b9ba9",
+    "config\\session_window.json": "178f51dc445495efe1c9b923249ee8e895cc85bd8807b883428654dd206593df",
+    "mission.py": "9a7239a5fa65e17ae8741ef8e4ec015be7d88dd77b66772f792b6b22089cf2e3",
+    "scripts\\auto_window.py": "8f566bb7988b8ca28e5b0ec045bd79270b3fc43fdb4262bc27b61a973b877111",
+    "config\\airborne_rgbd.json": "637b6bc6bcb0f48b86d204e669886374af283d24357a3b97c436090b95fe9c5d",
+    "live_geometry.py": "d3cb1f6767403962fd5b900d4e0b5b76a26405a8301d5cae189f4d5cfd6892b8",
+    "straight_pass.py": "0d7acc6b9b5f6b43f3fa8bcae0b6658882eb7615508657ec4c69516c8ee78da1",
+    "attitude_envelope.py": "73f8b371f5caf8613708f3645c38caa6f2845c06795b96df3888c3a0bc9ef095",
+    "prepass_adjustment.py": "331c99c08b574d5fa1d4a327888e94a0e2024de20ff4b9231f3416e6f7b84ee8",
+    "straight_pass_policy.py": "e7a44ee0c7095cb02209db9f5636603c768caebc30682717f12e6ad5d9c58c6d",
+    "envelope_fence.py": "5bb09a4e4a01015c61259378e2e81c9139339aec3e71b25447ac2c3c1e8ff468",
+    "alignment_policy.py": "81bd7e780430f7465da1262c189842632d57f66612cc6dab5100f2e3b4f37418",
+    "scripts\\start_components.py": "5381b278cbe51cf7f819442d3d2a754f64263dd346c50fd627037ac92c0160b9",
+    "takeoff.py": "f35be9ba0b429f98dfb3da9e4650fd433d8ffec906127208eba9bc1fab133190",
+    "field_site.py": "258ec5d016114ed4edcdf7776174096f8c3bdb6add390bde85423cecffd8f25b",
+    "scripts\\bind_takeoff_site.py": "c1b850c64b750ce050683d67cfd94efb2998fb5bccb89f827cee2d76e22b211d",
+    "config\\takeoff_land.json": "fcc35fd568df056c7da8ad41a207ec3e945aed505dbda92e1b3fb327754599d6",
+    "scripts\\reboot_setup.py": "5c30a6e2ccc04bb8266e6ed4b4c79651741e1b859c5421a5402d2120ed0b2f07"
+  }
+}

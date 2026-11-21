@@ -1,0 +1,35 @@
+# Pixel debugging profile from eight raw frames in usb_raw_rbANV8.
+# Reference relative to geometric image centre, NOT physical body coordinates.
+# No flight, PWM, physical hit certification or laser decision is produced.
+pixel_preview:
+  enabled: true
+  image_width: 640
+  image_height: 360
+  camera_frame_id: circle_usb_optical_frame
+  offset_x_px: 53.25
+  offset_y_px: 15.484375
+  # Point inside the unpainted inner opening: normalized radius < 1.
+  # Reduce this value to choose a smaller display tolerance.
+  inner_radius_ratio: 1.0
+  # Candidate-only colour settings measured from the saved image burst.
+  pink_r_minus_g_min: 20
+  pink_b_minus_g_min: 10
+  pink_r_min: 160
+  core_min_brightness: 220.0
+  core_peak_band: 10.0
+  halo_area_min: 2
+  halo_area_max: 100
+  # Tiny bright cores in the repaired-focus match often have no pink pixels.
+  # Controller still requires an OFF baseline and post-ACK temporal evidence.
+  white_core_fallback: true
+  # Search the calibrated laser footprint even when it lies outside the
+  # detected middle ring. Inner-ring scoring geometry remains unchanged.
+  local_spot_search: true
+
+detector:
+  # Existing field_85cm profile records these as outer diameters.
+  diameters_m: [0.35, 0.24, 0.12]
+  ring_width_m: 0.008
+  diameter_definition: outer
+  dimensions_confirmed: true
+image_timeout: 0.35

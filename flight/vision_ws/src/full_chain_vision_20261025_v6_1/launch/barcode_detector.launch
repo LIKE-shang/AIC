@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="full_chain_vision_20261025_v6_1" name="barcode_detector" type="barcode_detector.py" output="screen">
+        <remap from="input_rgb_image" to="/camera/rgb/image_raw" />
+
+    </node>
+</launch>

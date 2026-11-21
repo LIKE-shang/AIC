@@ -1,0 +1,49 @@
+# RGB-only geometry; physical distance is NOT measured.
+blur_kernel: 5
+canny_low: 50
+canny_high: 150
+epsilon_ratio: 0.02
+min_area: 1800.0
+max_area_fraction: 0.90
+min_side: 25.0
+min_aspect_ratio: 1.0
+max_aspect_ratio: 3.5
+max_angle_cosine: 0.40
+max_opposite_side_ratio: 1.6
+min_rectangularity: 0.72
+require_inner_frame: true
+min_inner_area_ratio: 0.30
+max_inner_area_ratio: 0.90
+max_inner_center_offset: 0.16
+max_inner_aspect_difference: 0.4
+min_frame_gap: 3.0
+min_inner_parallel_cosine: 0.94
+border_margin: 3
+dedup_center_ratio: 0.15
+# Extra evidence path for checker-pattern borders (all FOUR sides required).
+# Keeps require_inner_frame=true; never accepts an arbitrary quadrilateral.
+# The green outline and W/H in this mode describe the inner OPENING in pixels.
+checker_fallback: true
+checker_outer_scale: 1.15
+checker_min_area_fraction: 0.08
+checker_min_side_edge_fraction: 0.18
+checker_min_side_std: 25.0
+checker_dark_threshold: 100
+checker_light_threshold: 140
+checker_min_dark_fraction: 0.12
+checker_min_light_fraction: 0.10
+checker_min_cell_px: 2
+checker_max_cell_px: 24
+checker_min_alternation: 0.25
+checker_min_repeat: 0.25
+checker_texture_candidates: true
+checker_texture_kernels: [7, 11]
+checker_texture_thresholds: [45.0, 55.0]
+checker_morph_open: 7
+checker_morph_close: 5
+# Camera can still publish at 30 FPS; 0 disables this processing cap.
+# Actual throughput depends on Nano; processing_ms is reported in status.
+max_processing_fps: 10.0
+publish_edges: true
+edges_topic: /window_test/edges
+status_topic: /window_test/status

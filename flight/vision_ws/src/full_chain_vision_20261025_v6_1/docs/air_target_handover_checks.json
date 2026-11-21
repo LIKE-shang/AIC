@@ -1,0 +1,436 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "scope": "documentation_static_checks_only",
+  "executed_runtime_tests": false,
+  "executed_ROS_or_hardware": false,
+  "network_or_SSH_access": false,
+  "passed": 78,
+  "total": 78,
+  "checks": [
+    {
+      "name": "utf8_AIR_TARGET_HANDOVER.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "fences_AIR_TARGET_HANDOVER.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "link_AIR_TARGET_HANDOVER.md_robot_vision/docs/AIR_TARGET_HANDOVER_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "link_AIR_TARGET_HANDOVER.md_robot_vision/docs/air_target_handover_snapshot.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "utf8_AIR_TARGET_HANDOVER_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "fences_AIR_TARGET_HANDOVER_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "link_AIR_TARGET_HANDOVER_CN.md_AIR_TARGET_HANDHELD_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "link_AIR_TARGET_HANDOVER_CN.md_AIR_TARGET_UPDATE_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "link_AIR_TARGET_HANDOVER_CN.md_ROBOT_TEST_LOG.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "link_AIR_TARGET_HANDOVER_CN.md_air_target_handover_snapshot.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "link_AIR_TARGET_HANDOVER_CN.md_../msg/LaserDecision.msg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "link_AIR_TARGET_HANDOVER_CN.md_../../AIR_TARGET_HANDOVER.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "numbered_sections",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_decision_fields_documented",
+      "passed": true,
+      "details": [
+        "header",
+        "enable_laser",
+        "observation_valid",
+        "request_on",
+        "hit_count",
+        "miss_count",
+        "target_valid",
+        "aim_valid",
+        "calibration_valid",
+        "observed_hit",
+        "continuous_seconds",
+        "feedback_mode",
+        "reason"
+      ]
+    },
+    {
+      "name": "disarmed_interlock_documented",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "unverified_calibration_and_physical_result",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "effective_region",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_output_or_flight_commands_in_shell_blocks",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "audit_python_environment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "bounded_recording",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "camera_launch_args",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "launch_dry_defaults",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "detector_launch_args",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "test_case_count_not_execution",
+      "passed": true,
+      "details": {
+        "cases": 40,
+        "executed": false
+      }
+    },
+    {
+      "name": "installed_robot_vision/config/air_target_calibration_samples.template.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/config/air_target_field_85cm.yaml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/config/circle_laser_test.yaml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/config/laser_hardware.yaml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/docs/AIR_TARGET_HANDHELD_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/docs/AIR_TARGET_UPDATE_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/launch/circle_laser_test.launch",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/launch/circle_usb_camera.launch",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/msg/LaserDecision.msg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/scripts/circle_laser_test_node.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/src/laser_test_bridge.cpp",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/src/robot_vision_test/air_target.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/src/robot_vision_test/safety.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/test/test_air_target.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/tools/audit_air_camera.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/tools/calibrate_air_target.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/tools/replay_air_target.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/CMakeLists.txt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "installed_robot_vision/package.xml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "immutable__deploy/air_target_update_20261006_v1.tar.gz",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "immutable__deploy/air_target_installer_20261006_v1.tar.gz",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "immutable__deploy/robot_vision_before_airtest.sNw5nO.tar.gz",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "immutable_uav_mission/lib/liblib.so",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_src/robot_vision_test/air_target.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_scripts/circle_laser_test_node.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_src/robot_vision_test/safety.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_src/laser_test_bridge.cpp",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_msg/LaserDecision.msg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_launch/circle_usb_camera.launch",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_launch/circle_laser_test.launch",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_launch/laser_mavros_only.launch",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_config/laser_mavros_plugins.yaml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_config/circle_laser_test.yaml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_config/air_target_field_85cm.yaml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_config/laser_hardware.yaml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_config/air_target_calibration_samples.template.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_tools/audit_air_camera.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_tools/replay_air_target.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_tools/calibrate_air_target.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_tools/audit_pwm_library.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_test/test_air_target.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_test/test_node_callbacks.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_CMakeLists.txt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_package.xml",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_setup.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_docs/AIR_TARGET_HANDHELD_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_docs/AIR_TARGET_UPDATE_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_docs/AIR_TARGET_INSTALL_CN.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_docs/ROBOT_TEST_LOG.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory_docs/FILE_MANIFEST.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory__deploy/build_air_target_update.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory__deploy/test_air_target_update_package.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory__deploy/build_air_target_installer.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "inventory__deploy/air_target_installer_core.py",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "handover_files": [
+    {
+      "path": "AIR_TARGET_HANDOVER.md",
+      "bytes": 1831,
+      "sha256": "67eefea309aafadeb0542d72455947aa71ecb7462aac8c823e8a7087f5e3bce8"
+    },
+    {
+      "path": "robot_vision/docs/AIR_TARGET_HANDOVER_CN.md",
+      "bytes": 39143,
+      "sha256": "31c715c829d90e01350bc2e3cc233f28bbe45d5b113b2a9735c1b988cd198af8"
+    },
+    {
+      "path": "robot_vision/docs/air_target_handover_snapshot.json",
+      "bytes": 20430,
+      "sha256": "2c7255c7c80a57528085b1a03c40c8908ab6d4c8054e4c3fc76c70dadcd10c7c"
+    }
+  ]
+}
